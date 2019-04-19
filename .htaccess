@@ -1,0 +1,126 @@
+# Redirect all traffic to https
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://wwww.moabi.com/%{REQUEST_URI} [R=301,L]
+
+#Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^moabi.com [NC]
+RewriteRule ^(.*)$ https://www.moabi.com/$1 [L,R=301,NC]
+
+#Redirect mobile
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^moabi\.com [NC,OR]
+RewriteCond %{HTTP_HOST} www\.moabi\.com [NC]
+RewriteCond %{REQUEST_URI} ^/$ [NC,OR]
+RewriteCond %{REQUEST_URI} ^/index.html$
+RewriteCond %{HTTP_USER_AGENT} "android|blackberry|googlebot-mobile|iemobile|iphone|ipod|#opera mobile|palmos|webos" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "acs|alav|alca|amoi|audi|aste|avan|benq|bird|blac|blaz|brew|cell|cldc|cmd-" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "dang|doco|eric|hipt|inno|ipaq|java|jigs|kddi|keji|leno|lg-c|lg-d|lg-g|lge-" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT}  "maui|maxo|midp|mits|mmef|mobi|mot-|moto|mwbp|nec-|newt|noki|opwv" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "palm|pana|pant|pdxg|phil|play|pluc|port|prox|qtek|qwap|sage|sams|sany" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "sch-|sec-|send|seri|sgh-|shar|sie-|siem|smal|smar|sony|sph-|symb|t-mo" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "teli|tim-|tosh|tsm-|upg1|upsi|vk-v|voda|w3cs|wap-|wapa|wapi" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "wapp|wapr|webc|winw|winw|xda|xda-" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "up.browser|up.link|windowssce|iemobile|mini|mmp" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "symbian|midp|wap|phone|pocket|mobile|pda|psp" [NC]
+RewriteRule ^/?(.*)$ https://m.moabi.com/ [L,R=302,QSA]
+
+###############################################
+
+# Content Security Policy
+#Header set Content-Security-Policy "default-src 'self' https://www.moabi.com https://m.moabi.com ; script-src 'self' https://www.moabi.com https://m.moabi.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com 'unsafe-inline'; connect-src 'self' https://www.moabi.com https://m.moabi.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com ; img-src 'self' data: https://www.moabi.com https://m.moabi.com https://www.google-analytics.com https://track.hubspot.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://www.moabi.com https://m.moabi.com https://tagmanager.google.com/ https://fonts.googleapis.com/ 'unsafe-inline' ; font-src 'self' https://www.moabi.com https://m.moabi.com https://fonts.googleapis.com https://fonts.gstatic.com/ ; frame-src https://www.youtube.com/ https://youtube.com/ ; base-uri 'self' https://www.moabi.com https://m.moabi.com ;"
+
+# Anti XSS header
+Header set X-XSS-Protection "1; mode=block"
+
+# Anti page-framing and clickjacking
+Header always append X-Frame-Options DENY
+
+# Anti content sniffing header
+Header set X-Content-Type-Options nosniff
+
+###############################################
+
+# Fix CORS cross origin problem https://crunchify.com/how-to-fix-access-control-allow-origin-issue-for-your-https-enabled-wordpress-site-and-maxcdn/
+
+<ifmodule mod_headers.c="">
+   SetEnvIf Origin "^(.*\.moabi\.com)$" ORIGIN_SUB_DOMAIN=$1
+   Header set Access-Control-Allow-Origin "%{ORIGIN_SUB_DOMAIN}e" env=ORIGIN_SUB_DOMAIN
+   Header set Access-Control-Allow-Methods: "*"
+   Header set Access-Control-Allow-Headers: "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+</ifmodule>
+
+###############################################
+
+# Disable directory listing
+Options -Indexes
+
+# SEO : redirect all 404 to /php/redir.php
+#ErrorDocument 401 /php/redir.php
+#ErrorDocument 403 /php/redir.php
+#ErrorDocument 404 /php/redir.php
+#ErrorDocument 500 /php/redir.php
+#ErrorDocument 503 /php/redir.php
+#ErrorDocument 504 /php/redir.php
+
+###############################################
+
+# Premium invite redirection
+Redirect /premium-invite/ /invite-only.html
+
+###############################################
+
+# Proxy Caching
+# 1 year for most static assets <-- overriden by cloudflare
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico|svg)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+
+###############################################
+
+# Generic content type force
+AddType 'font/woff2' .woff2
+
+# Force define content types
+<Files "index.html">
+ForceType 'text/html; charset=UTF-8'
+</Files>
+<Files "/">
+ForceType 'text/html; charset=UTF-8'
+</Files>
+<Files "/fonts/fontawesome-webfont.woff2">
+ForceType 'font/woff2'
+</Files>
+<Files "/fonts/1Ptrg8zYS_SKggPNwIYqWqZPBQ.woff2">
+ForceType 'font/woff2'
+</Files>
+<Files "/fonts/1Ptrg8zYS_SKggPNwIouWqZPBQ.woff2">
+ForceType 'font/woff2'
+</Files>
+<Files "/fonts/1Ptrg8zYS_SKggPNwJYtWqZPBQ.woff2">
+ForceType 'font/woff2'
+</Files>
+<Files "/fonts/1Ptrg8zYS_SKggPNwK4vWqZPBQ.woff2">
+ForceType 'font/woff2'
+</Files>
+<Files "/fonts/1Ptrg8zYS_SKggPNwN4rWqZPBQ.woff2">
+ForceType 'font/woff2'
+</Files>
+<Files "/fonts/1Ptrg8zYS_SKggPNwOIpWqZPBQ.woff2">
+ForceType 'font/woff2'
+</Files>
+<Files "/fonts/1Ptrg8zYS_SKggPNwPIsWqZPBQ.woff2">
+ForceType 'font/woff2'
+</Files>
+<Files "/fonts/1Ptsg8zYS_SKggPNwE44TYFv.woff2">
+ForceType 'font/woff2'
+</Files>
+<Files "/fonts/1Ptug8zYS_SKggPNyC0ISg.woff2">
+ForceType 'font/woff2'
+</Files>
+<Files "/js/plugins/revolution/fonts/revicons/revicons.woff2">
+ForceType 'font/woff2'
+</Files>
+
+
