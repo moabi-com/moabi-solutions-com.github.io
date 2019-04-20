@@ -10,6 +10,6 @@ User-agent: facebookexternalhit
 Allow: /IoT
 
 #Sitemap
-Sitemap: https://www.moabi.com/sitemap.xml
+Sitemap: https://moabi.com/sitemap.xml
 
 

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-  <loc>http://www.moabi.com/index.html</loc>
+  <loc>http://moabi.com/index.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>https://www.moabi.com</loc>
+  <loc>https://moabi.com</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
@@ -16,77 +16,82 @@
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/moabi_paris.jpg</loc>
+  <loc>https://www.moabi.com</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/moabi_NYC.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/moabi_paris.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/moabi_asia.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/moabi_NYC.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/moabi_HK.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/moabi_asia.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/logo-white.png</loc>
+  <loc>http://moabi.com/IoT/security/metrics/moabi_HK.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/iiot.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/logo-white.png</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/compliance.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/iiot.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/5g.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/compliance.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/hardening.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/5g.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/assessment.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/hardening.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/automotive.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/assessment.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/cryptographic_ciphers.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/automotive.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/legacy.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/cryptographic_ciphers.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/edge.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/legacy.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
 <url>
-  <loc>http://www.moabi.com/IoT/security/metrics/mission.jpg</loc>
+  <loc>http://moabi.com/IoT/security/metrics/edge.jpg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-04-19</lastmod>
+</url>
+<url>
+  <loc>http://moabi.com/IoT/security/metrics/mission.jpg</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-04-19</lastmod>
 </url>
