@@ -135,6 +135,17 @@
     <meta name="msapplication-TileColor" content="#446CDE">
     <meta name="theme-color" content="#446CDE">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=GTM-T8DGP7R"></script>
+    <!-- Google analytics handler -->
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'GTM-T8DGP7R');
+    </script>
+
     <!-- Note: stylesheets are loaded twice to make up for the lack of preloading in Firefox. See https://stackoverflow.com/questions/45321043/preload-css-file-not-supported-on-firefox-and-safari-mac -->
     <!-- CSS  Fonts -->
     <link rel="preload" href="/css/font-awesome.min.css" as="style" />
@@ -929,17 +940,6 @@
 	      }
 	   }
 	};
-    </script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async defer src="https://www.googletagmanager.com/gtag/js?id=GTM-T8DGP7R"></script>
-    <!-- Google analytics handler -->
-    <script type="text/javascript">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'GTM-T8DGP7R');
     </script>
 
     <!-- Lazy loading of images handler -->
