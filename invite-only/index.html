@@ -1,7 +1,9 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="utf-8" />
     <meta name="description" content="Preventive Software Security Analytics. Moabi SaaS platform is a pro-active security solution to audit software, firmware, binaries and their dependencies.">
+    <meta name="keywords" content="Binary analysis, Preventive Software analytics, IoT security, security analytics, preventive security, IIot security, Saas security, scalable security">
     <title>Moabi - Preventive Software Security</title>
 
     <!-- Content Security Policy -->
@@ -36,29 +38,18 @@
 				"postOfficeBoxNumber": "330143"
 			}
 		],
-		"geo": [
-			{
-				"@type": "GeoCoordinates",
-				"latitude": "48.8421379",
-				"longitude": "2.3197627"
-			},
-			{
-				"@type": "GeoCoordinates",
-				"latitude": "37.7939421",
-				"longitude": "-122.4102688"
-			}
-		],
 		"contactPoint": [
 			{
 				"@type": "ContactPoint",
-				"telephone": "(33 1) 88 33 50 53",
+				"telephone": "+33188335053",
 				"email": "info(at)moabi.com",
 				"contactType": "sales"
 			},
 			{
 				"@type": "ContactPoint",
 				"email": "moabi(at)moabi.com",
-				"contactType": "engineering"
+				"contactType": "customer service",
+				"url": "https://moabi.com"
 			}
 		],
 		"sameAs": [
@@ -75,11 +66,17 @@
     </script>
 
     <!-- Open Graph metadata -->
-    <meta property="og:title" content="Moabi - Preventive Software Security" />
+    <meta property="og:title" content="Moabi - Binary Analysis - Preventive Software Security" />
     <meta property="og:url" content="https://moabi.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://moabi.com/moabi.png" />
+    <meta property="og:image" content="https://moabi.com/moabi_card.png" />
     <meta property="og:description" content="Preventive Software Security Analytics. Moabi SaaS platform is a pro-active security solution to audit software, firmware, binaries and their dependencies." />
+    <meta property="og:site_name" content="Moabi : Preventive Software Security Analytics">
+
+    <!-- Twitter card integration (works with Open Graph data above) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Moabi Saas platform : binary analysis">
+    <meta name="twitter:site" content="@moabi_com">
 
     <!-- Yandex indexation -->
     <meta name="yandex-verification" content="e477bac9aff66624" />
@@ -93,6 +90,18 @@
     <link rel="preconnect" href="https://www.google-analytics.com">
 
     <!-- Preload optimization -->
+   <link rel="preload" href="/fonts/1Ptrg8zYS_SKggPNwIouWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="/fonts/1Ptrg8zYS_SKggPNwN4rWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="/fonts/1Ptug8zYS_SKggPNyC0ISg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="/fonts/1Ptrg8zYS_SKggPNwJYtWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="/js/modernizr.js" as="script">
+   <link rel="preload" href="/js/jquery-3.3.1.min.js" as="script">
+   <link rel="preload" href="/js/lazyload.js" as="script">
+   <link rel="preload" href="/js/main.js" as="script">
+   <link rel="preload" href="/js/rev.js" as="script">
+   <link rel="preload" href="/js/custom.js" as="script">
+   <link rel="preload" href="/js/site.js" as="script">
+
     <link rel="preload" href="/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous">
 
     <!-- Canonical name -->
@@ -122,6 +131,16 @@
     <meta name="msapplication-square310x310logo" content="large.jpg"/>
     <meta name="msapplication-TileColor" content="#446CDE">
     <meta name="theme-color" content="#446CDE">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129423028-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129423028-1');
+    </script>
 
     <!-- Note: stylesheets are loaded twice to make up for the lack of preloading in Firefox. See https://stackoverflow.com/questions/45321043/preload-css-file-not-supported-on-firefox-and-safari-mac -->
     <!-- CSS  Fonts -->
@@ -216,34 +235,33 @@ function validateForm() {
         </section>
         <!-- Newsletter Section Ends -->
 
-
         <!-- Footer Section Starts -->
         <footer class="footer text-center">
             <!-- Container Starts -->
             <div class="container">
                 <!-- Copyright Text Starts -->
-                <p><a href="https://moabi.com">MOABI - Preventive Software Security</a></p>
+                <p><a href="https://moabi.com" alt="Moabi main page">MOABI - Preventive Software Security</a></p>
                 <br />
-                    &copy; Copyright 2010-2019 <a href="https://moabi.com">MOABI.com</a>
+                    &copy; Copyright 2010-2019 <a href="https://moabi.com" alt="Moabi.com">MOABI.com</a>
                 </p>
                 <!-- Copyright Text Ends -->
                 <!-- Social Media Links Starts -->
                 <div class="social-icons">
                     <ul class="social">
                         <li>
-                            <a class="linkedin" rel=nofollow href="https://www.linkedin.com/company/moabi-com" title="linkedin" crossorigin="anonymous" ></a>
+                            <a class="linkedin" rel=nofollow href="https://www.linkedin.com/company/moabi-com" title="linkedin" alt="Moabi Linkedin page" crossorigin="anonymous" ></a>
                         </li>
                         <li>
-                            <a class="twitter" rel=nofollow href="https://twitter.com/moabi_com" title="twitter" crossorigin="anonymous" ></a>
+                            <a class="twitter" rel=nofollow href="https://twitter.com/moabi_com" title="twitter" alt="Moabi Twitter page" crossorigin="anonymous" ></a>
                         </li>
                         <li>
-                            <a class="facebook" rel=nofollow href="https://www.facebook.com/moabi.info" title="facebook"></a>
+                            <a class="facebook" rel=nofollow href="https://www.facebook.com/moabi.info" title="facebook" alt="Moabi Facebook page" crossorigin="anonymous" ></a>
                         </li>
                         <li>
-                            <a class="youtube" rel=nofollow href="https://www.youtube.com/moabi" title="youtube" crossorigin="anonymous" ></a>
+                            <a class="youtube" rel=nofollow href="https://www.youtube.com/moabi" title="youtube" alt="Moabi Youtube page" crossorigin="anonymous" ></a>
                         </li>
                         <li>
-                            <a class="github" rel=nofollow href="https://github.com/moabi-com/" title="github" alt="github" crossorigin="anonymous" ></a>
+                            <a class="github" rel=nofollow href="https://github.com/moabi-com/test_samples/" title="github" alt="Moabi Github page" crossorigin="anonymous" ></a>
                         </li>
                     </ul>
                 </div>
@@ -251,8 +269,8 @@ function validateForm() {
 
 	    <!-- Legal disclaimers -->
 
-		<a rel=nofollow href="https://sway.office.com/s/kH8jcglT524MLF9c/embed" crossorigin="anonymous" >Statement of Privacy and Data Protection</a><p />
-		<a rel=nofollow href="https://sway.office.com/s/Ix11qiH6Z5L4VzmL/embed" crossorigin="anonymous" >Moabi website Terms of Use</a>
+		<a rel=nofollow href="https://sway.office.com/s/ZGZJ9H4Acjpmeiv1/embed" crossorigin="anonymous" alt="Moabi Statement of privacy" >Statement of Privacy and Data Protection</a><p />
+		<a rel=nofollow href="https://sway.office.com/s/77E2E35BSeGykIj0/embed" crossorigin="anonymous" alt="Moabi terms of use" >Moabi website Terms of Use</a>
 
 	    <!-- End of Legal disclaimers -->
 
@@ -263,7 +281,7 @@ function validateForm() {
         <!-- Back To Top Starts -->
         <div id="back-top-wrapper" class="d-none d-sm-block">
             <p id="back-top">
-                <a href="index.html#top"><span></span></a>
+                <a href="index.html#top" alt="back to top"><span> </span></a>
             </p>
         </div>
         <!-- Back To Top Ends -->
@@ -271,16 +289,16 @@ function validateForm() {
     <!-- Wrapper Ends -->
 
     <!-- Template JS Files -->
-    <script type="text/javascript" src="/js/modernizr.js"></script>
-    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
-    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/lazyload.js"></script>
     <!-- Revolution Slider Main JS Files -->
-    <script defer type="text/javascript" src="/js/rev.js"></script>
+    <script defer type="text/javascript" src="js/rev.js"></script>
     <!-- Revolution Slider Extensions -->
-    <script defer type="text/javascript" src="/js/site.js"></script>
+    <script defer type="text/javascript" src="js/site.js"></script>
     <!-- Main JS Initialization File -->
-    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <script defer type="text/javascript" src="js/custom.js"></script>
 
     <!-- Add javascript listener -->
     <script type="text/javascript">
@@ -304,22 +322,26 @@ function validateForm() {
 	};
     </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async defer src="https://www.googletagmanager.com/gtag/js?id=GTM-T8DGP7R"></script>
-    <!-- Google analytics handler -->
-    <script type="text/javascript">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'GTM-T8DGP7R');
-    </script>
-
     <!-- Lazy loading of images handler -->
     <script type="text/javascript">
 	window.addEventListener("load", function(event) {
 	    lazyload();
 	});
+    </script>
+
+    <!-- Add Service Worker -->
+    <script type="text/javascript">
+	if ('serviceWorker' in navigator) {
+	  // Register a service worker hosted at the root of the
+	  // site using the default scope.
+	  navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+	    console.log('Service worker registration succeeded:', registration);
+	  }, /*catch*/ function(error) {
+	    console.log('Service worker registration failed:', error);
+	  });
+	} else {
+	  console.log('Service workers are not supported.');
+	}
     </script>
 
     <!-- Revolution Slider Initialization Starts -->
