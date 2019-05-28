@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /IoT
+Allow: /blog
+Allow: /news
+
+#Sitemap
+Sitemap: https://endrazine.com/sitemap.xml
+
+
