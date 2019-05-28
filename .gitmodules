@@ -1,0 +1,3 @@
+[submodule "research/jbrossard"]
+	path = research/jbrossard
+	url = git@github.com:endrazine/endrazine.github.io.git
