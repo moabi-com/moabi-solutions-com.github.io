@@ -1005,4 +1005,620 @@
   <changefreq>daily</changefreq>
   <lastmod>2019-06-09</lastmod>
 </url>
+<url>
+<loc>https://moabi.com/research/jbrossard/</loc>
+<image:image>
+<image:loc>https://moabi.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/blank.jpg</image:loc>
+<image:title>Security Analytics</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/jonathan_brossard.jpeg</image:loc>
+<image:title>project manager</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/wcc-thumb.jpeg</image:loc>
+<image:title>Mission</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/codebase_thumbnail.jpeg</image:loc>
+<image:title>Wichcraft Compiler Collection source code</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/defcon_24.jpeg</image:loc>
+<image:title>Defcon 24 (Las Vegas) Video</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/documentation_thumbnail.jpeg</image:loc>
+<image:title>WCC online documentation</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/Blackhat-2016.jpeg</image:loc>
+<image:title>WCC Blackhat Europe 2016 Presentation</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/RE.jpeg</image:loc>
+<image:title>WCC Slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/User_Manual.jpeg</image:loc>
+<image:title>WCC user manual</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/package_thumbnail.jpeg</image:loc>
+<image:title>Wichcraft Compiler Collection package</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/BSides_2017.jpeg</image:loc>
+<image:title>WCC BSides San Francisco Video</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/WP.jpeg</image:loc>
+<image:title>WCC Slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/smb.jpeg</image:loc>
+<image:title>Mission</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/windows10-thumbnail.jpeg</image:loc>
+<image:title>First Windows 10 exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/edge-thumbnail.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/Blackhat_2015-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/filecry-thumbnail3.jpeg</image:loc>
+<image:title>FileCry Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/ie-thumbnail.jpeg</image:loc>
+<image:title>MS15-039/CVE-2015-1646</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/filecry-thumbnail2.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/blackhat-2015-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/java-thumb2.jpeg</image:loc>
+<image:title>XXE Java Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/java-thumbnail.jpeg</image:loc>
+<image:title>CVE-2017-18197</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/salesforce-thumbnail.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/rakshasa-thumb.jpeg</image:loc>
+<image:title>FileCry Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/wikipedia-thumbnail.jpeg</image:loc>
+<image:title>World&amp;apos;s first Firmware Backdoor</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/defcon-20-thumbnail.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/MIT-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/Forbes-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/blackhat-2012-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/rakshasa-blackhat-2012-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/pmcma-thumb.jpeg</image:loc>
+<image:title>PMCMA Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/ccc-thumbnail.jpeg</image:loc>
+<image:title>PMCMA source code</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/blackhat-2011-thumbnail.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/pmcma-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/virtualization-thumbnail.jpeg</image:loc>
+<image:title>Breaking Virtualization Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/hitb_2010-thumbnail.jpeg</image:loc>
+<image:title>HITB Amsterdam slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/ruxcon-2010-thumbnail.jpeg</image:loc>
+<image:title>HITB slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/hitb-KL-2010-thumbnail.jpeg</image:loc>
+<image:title>HITB Kuala Lumpur slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/bios-thumbnail.jpeg</image:loc>
+<image:title>PreBoot Authentication Bypass Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/defcon-16-thumbnail.jpeg</image:loc>
+<image:title>DEF CON 16 Audio</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/bios1.jpeg</image:loc>
+<image:title>HITB slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/bios2.jpeg</image:loc>
+<image:title>DEF CON 16 slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/bios3.jpeg</image:loc>
+<image:title>DEF CON 16 Whitepaper</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/bitlocker.jpeg</image:loc>
+<image:title>Bitlocker Advisory</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/truecrypt.jpeg</image:loc>
+<image:title>TrueCrypt Advisory</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_DEFCON_24_Witchcraft_Compiler_Collection.png</image:loc>
+<image:title>DEFCON 24 Witchcraft Compiler Collection</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_DEFCON_16_BIOS_whitepaper.png</image:loc>
+<image:title>Bypassing Preboot Authentication Passwords</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_28c3_Chaos_Computer_Conference.png</image:loc>
+<image:title>28c3 Chaos Computer Conference</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Bios_Information_Leakage.png</image:loc>
+<image:title>BIOS Information leakage</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Blackhat_2015_SMB_Sharing_More_than_your_files.png</image:loc>
+<image:title>Blackhat 2015 SMB Sharing More than your files</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_INTEL_iSEC_2016.png</image:loc>
+<image:title>INTEL iSEC 2016</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Blackhat_2015_SMBv2_Sharing_More_Than_Just_Your_Files.png</image:loc>
+<image:title>Blackhat 2015 SMBv2 Sharing More Than Just Your Files</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_INTEL_iSEC_2012.png</image:loc>
+<image:title>INTEL iSEC 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Ruxmon_2012_Reverse_Engineering_Proprietary_Protocols.png</image:loc>
+<image:title>Ruxmon 2012 Reverse Engineering Proprietary Protocols</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_SYSCAN_2013.png</image:loc>
+<image:title>SYSCAN 2013</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Shakacon_2017_Silent_Protest.png</image:loc>
+<image:title>Shakacon 2017 Silent Protest</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Blackhat_2015_XXE_Defenseless_JDK_XML_Parsers_JAVA.png</image:loc>
+<image:title>Blackhat 2015 XXE Defenseless JDK XML Parsers JAVA</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Blackhat_Europe_2016_Witchcraft_Compiler_Collection-Towards_Self_Aware_Computer_Programs-wp.png</image:loc>
+<image:title>Blackhat Europe 2016 Witchcraft Compiler Collection-Towards Self Aware Computer Programs-wp</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Blackhat_USA_2011_Post_Memory_Corruption_Memory_Analysis_PMCMA.png</image:loc>
+<image:title>Blackhat USA 2011 Post Memory Corruption Memory Analysis PMCMA</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Blackhat_USA_2012_Hardware_Backdooring_is_Practical.png</image:loc>
+<image:title>Blackhat USA 2012 Hardware Backdooring is Practical</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_CCC_2012.png</image:loc>
+<image:title>CCC 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Blackhat_2011_Post_Memory_Corruption_Memory_Analysis_Whitepaper.png</image:loc>
+<image:title>Blackhat 2011 Post Memory Corruption Memory Analysis Whitepaper</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe.png</image:loc>
+<image:title>Blackhat 2015 Filecry the new age of xxe</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_DEFCON_16_Bitlocker.png</image:loc>
+<image:title>DEFCON 16 Bitlocker</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_DEFCON_20_Hardware_Backdooring_is_Practical.png</image:loc>
+<image:title>DEFCON 20 Hardware Backdooring is Practical</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_DEFCON_24_Introduction-to-the-Witchcraft-Compiler-Collection.png</image:loc>
+<image:title>DEFCON 24 Introduction-to-the-Witchcraft-Compiler-Collection</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Blackhat_2011.WP.png</image:loc>
+<image:title>Blackhat 2011.WP</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_H2HC_2009.png</image:loc>
+<image:title>H2HC 2009</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2010.png</image:loc>
+<image:title>HackitoErgoSum 2010</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_H2HC_2010.png</image:loc>
+<image:title>H2HC 2010</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_H2HC_2013.png</image:loc>
+<image:title>H2HC 2013</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_HITB_2010_Amsterdam.png</image:loc>
+<image:title>HITB 2010 Amsterdam</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_TELECOMX_2009.png</image:loc>
+<image:title>TELECOMX 2009</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_HITB_2010_KualaLumpur.png</image:loc>
+<image:title>HITB 2010 KualaLumpur</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Auscert_2013_Hardware_Backdooring.png</image:loc>
+<image:title>Auscert 2013 Hardware Backdooring</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_BSides_San_Francisco_2016_Witchcraft_Compiler_Collection.png</image:loc>
+<image:title>BSides San Francisco 2016 Witchcraft Compiler Collection</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_HITB_2011.png</image:loc>
+<image:title>HITB 2011</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_HITB_2011_Breaking_Virtualization_8088_mode.png</image:loc>
+<image:title>HITB 2011 Breaking Virtualization 8088 mode</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2010_Breaking_Virtualization_8088_mode.png</image:loc>
+<image:title>HackitoErgoSum 2010 Breaking Virtualization 8088 mode</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_H2HC_2013_Sandboxing.png</image:loc>
+<image:title>H2HC 2013 Sandboxing</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_H2HC_Breaking_Preboot_Authentication.png</image:loc>
+<image:title>H2HC Breaking Preboot Authentication</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Kiwicon_2011.png</image:loc>
+<image:title>Kiwicon 2011</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_NULLCON_2012.png</image:loc>
+<image:title>NULLCON 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_HITB_2011_PMCMA.png</image:loc>
+<image:title>HITB 2011 PMCMA</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_NULLCON_2019.png</image:loc>
+<image:title>NULLCON 2019</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Syscan_2013_Sandboxing.png</image:loc>
+<image:title>Syscan 2013 Sandboxing</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_WCC_internal_documentation.png</image:loc>
+<image:title>WCC internal documentation</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_NoSuchCon_Hardware_Backdooring_Is_Practical.png</image:loc>
+<image:title>NoSuchCon Hardware Backdooring Is Practical</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_RUXCON_2010.png</image:loc>
+<image:title>RUXCON 2010</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_Blackhat_2016_Witchcraft-Compiler-Collection_User_Manual.png</image:loc>
+<image:title>Blackhat 2016 Witchcraft-Compiler-Collection User Manual</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_RUXCON_2011.png</image:loc>
+<image:title>RUXCON 2011</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2012.png</image:loc>
+<image:title>HackitoErgoSum 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_RUXCON_2012.png</image:loc>
+<image:title>RUXCON 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_RUXCON_2013.png</image:loc>
+<image:title>RUXCON 2013</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_ClubHack_2008.png</image:loc>
+<image:title>ClubHack 2008</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/Jonathan_Brossard_blackhat2012.png</image:loc>
+<image:title>blackhat2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/bios1.jpeg</image:loc>
+<image:title>Tools index</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/bios2.jpeg</image:loc>
+<image:title>Witchcraft Compiler Collection (WCC) Repository</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/pmcma.jpeg</image:loc>
+<image:title>PMCMA Repository</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/wcc.jpeg</image:loc>
+<image:title>Witchcraft Compiler Collection (WCC) archive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/code.jpeg</image:loc>
+<image:title>PMCMA archive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/whitepapers/bios3.jpeg</image:loc>
+<image:title>DEFCON 16 archive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/forbes.png</image:loc>
+<image:title>Toucan System - Forbes</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/MIT.png</image:loc>
+<image:title>Toucan System - MIT</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/images/SHM.png</image:loc>
+<image:title>client</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://moabi.com</loc>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/logo-white.png</image:loc>
+<image:title>Moabi Securing Firmware</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/blank.jpg</image:loc>
+<image:title>Security Analytics</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/mission.jpg</image:loc>
+<image:title>Mission</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/hardening.jpg</image:loc>
+<image:title>Hardening</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/assessment.jpg</image:loc>
+<image:title>Vulnerabilities</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/automotive.jpg</image:loc>
+<image:title>Automotive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/legacy.jpg</image:loc>
+<image:title>Legacy</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/edge.jpg</image:loc>
+<image:title>Edge Computing</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/trailer1.jpg</image:loc>
+<image:title>Moabi presentation video</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/cryptographicciphers.jpg</image:loc>
+<image:title>Cryptography</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/iiot.jpg</image:loc>
+<image:title>IIoT</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/samples.jpg</image:loc>
+<image:title>Samples</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/compliance.jpg</image:loc>
+<image:title>Compliance</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/trailer2.jpg</image:loc>
+<image:title>Moabi Demo</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/research.jpg</image:loc>
+<image:title>Research</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://moabi.com/IoT/security/metrics/5g.jpg</image:loc>
+<image:title>5g</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
 </urlset>
