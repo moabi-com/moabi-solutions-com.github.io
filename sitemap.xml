@@ -857,7 +857,7 @@
   <lastmod>2019-07-12</lastmod>
 </url>
 <url>
-  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/kpatch/src/kpatch.c</loc>
+  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/kpatch/src/kpatch.c.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-12</lastmod>
 </url>
@@ -902,7 +902,7 @@
   <lastmod>2019-07-12</lastmod>
 </url>
 <url>
-  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/ksploit-proc/src/ksploit.c</loc>
+  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/ksploit-proc/src/ksploit.c.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-12</lastmod>
 </url>
@@ -917,7 +917,7 @@
   <lastmod>2019-07-12</lastmod>
 </url>
 <url>
-  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/invisible-man/invisible_man.c</loc>
+  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/invisible-man/invisible_man.c.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-12</lastmod>
 </url>
@@ -937,7 +937,7 @@
   <lastmod>2019-07-12</lastmod>
 </url>
 <url>
-  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/userland-unix/generic.unix.sploit.c</loc>
+  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/userland-unix/generic.unix.sploit.c.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-12</lastmod>
 </url>
@@ -992,17 +992,17 @@
   <lastmod>2019-07-12</lastmod>
 </url>
 <url>
-  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/BIOS/reset_cmos.c</loc>
+  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/BIOS/reset_cmos.c.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-12</lastmod>
 </url>
 <url>
-  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/BIOS/cmos_dump.c</loc>
+  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/BIOS/cmos_dump.c.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-12</lastmod>
 </url>
 <url>
-  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/BIOS/bios_keyboard_buffer.c</loc>
+  <loc>https://moabi.com/research/jbrossard/whitepapers/tools/BIOS/bios_keyboard_buffer.c.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-12</lastmod>
 </url>
