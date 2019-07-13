@@ -2,10 +2,9 @@
 <html lang="en">
 <html>
 <head>
-<title>/tools/tools_defcon_16_BIOS/ksploit-proc/Kbuild</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-<link rel="canonical" href="https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/ksploit-proc/Kbuild" />
+<title>kpatch/src/Makefile</title>
+<link rel="canonical" href="https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/kpatch/src/Makefile.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.86">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!-- Content Security Policy -->
@@ -88,7 +87,6 @@
 
       gtag('config', 'UA-129423028-1');
     </script>
-
 
 <style type="text/css">
 pre { white-space: pre-wrap; }
@@ -384,7 +382,11 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
-obj-m := src/
+<span class="f7">#</span>
+<span class="f7"># Makefile for the patch against BIOS keyboard buffer attacks</span>
+<span class="f7">#</span>
+
+<span class="f1">obj-m</span>	+= kpatch.o
 </pre>
 </body>
 </html>
