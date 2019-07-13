@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
 <title>Defcon BIOS spoitos.S</title>
