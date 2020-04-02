@@ -155,6 +155,10 @@
     <link rel="preload" href="https://moabi.com/css/site.css" as="style" />
     <link rel="stylesheet" href="https://moabi.com/css/site.css">
 
+    <!-- flags CSS  -->
+    <link rel="preload" href="https://moabi.com/css/flags.css" as="style" />
+    <link rel="stylesheet" href="https://moabi.com/css/flags.css">
+
 </head>
 <body class="skew">
 
@@ -192,6 +196,17 @@
 					<!-- Hamburger Icon Ends -->
 					<!-- Navigation Menu Starts -->
                     <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
+
+
+<div class="language-picker language-picker--hide-label js-language-picker" data-trigger-class="btn btn--subtle js-tab-focus">
+  <form action="" class="language-picker__form">
+    <select name="language-picker-select" id="language-picker-select">
+      <option lang="fr" value="francais" selected>Français</option>
+      <option lang="en" value="english" >English</option>
+    </select>
+  </form>
+</div>
+
                         <ul class="nav-menu-inner ml-auto">
                             <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="home" href="#mainslider"><i class="fa fa-home"></i> menu principal</a></li>
                             <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="platform" href="#platform"><i class="fa fa-cloud"></i> plateforme</a></li>
