@@ -1597,6 +1597,81 @@ tbody.collapse.show {
     background-image: url(data:image/svg+xml;charset=utf8;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA0IDQnPjxwYXRoIHN0cm9rZT0nI2ZmZicgZD0nTTAgMmg0Jy8+PC9zdmc+)
 }
 
+/* Logo */
+
+.logo {
+    float: left;
+    text-align: left;
+    display: inline-block;
+}
+.logo a {
+    width: 150px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+.logo a img {
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+.header .logo a img.logo-light {
+    opacity: 1;
+}
+.header .logo a img.logo-dark {
+    opacity: 0;
+}
+.header.header-fixed .logo a img.logo-light {
+    opacity: 0;
+}
+.header.header-fixed .logo a img.logo-dark {
+    opacity: 1;
+}
+.logo {
+    float: left;
+    text-align: left;
+    display: inline-block;
+}
+.logo a {
+    max-width: 100%;
+    margin-top: 10px;
+    transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    position: relative;
+}
+.logo a img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+}
+/* Dark Header */
+
+body.dark .header .logo a img.logo-light {
+    opacity: 1;
+}
+body.dark .header .logo a img.logo-dark {
+    opacity: 0;
+}
+body.dark .header.header-fixed .logo a img.logo-light {
+    opacity: 1;
+}
+body.dark .header.header-fixed .logo a img.logo-dark {
+    opacity: 0;
+}
+
 .nav {
     display: -ms-flexbox;
     display: flex;
