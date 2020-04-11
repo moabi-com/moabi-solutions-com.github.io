@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="de" xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Moabi : Software- und Firmware-Sicherheit. Moabi ist eine Online-Plattform zur Analyse der Sicherheit von Firmwares, Binärsoftware und deren Abhängigkeiten.">
+    <meta name="keywords" content="Binäre Analyse, Kennzahlen zur vorbeugenden Sicherheit, IoT-Sicherheit, Firmware-Sicherheit, IIoT-Sicherheit, vorbeugende Sicherheit, Sicherheitsmetriken">
+    <title>Moabi - Sichere Software</title>
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://moabi.com https://m.moabi.com ; script-src 'self' https://moabi.com https://m.moabi.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-banner.com https://js.hs-analytics.net https://track.hubspot.com 'unsafe-inline'; connect-src 'self' https://moabi.com https://m.moabi.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com ; img-src 'self' data: https://moabi.com https://m.moabi.com https://www.google-analytics.com https://track.hubspot.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://moabi.com https://m.moabi.com https://tagmanager.google.com/ https://fonts.googleapis.com/ 'unsafe-inline' ; font-src 'self' https://moabi.com https://m.moabi.com https://fonts.googleapis.com https://fonts.gstatic.com/ ; frame-src https://www.youtube.com/ https://youtube.com/ ; base-uri 'self' https://moabi.com https://m.moabi.com ;" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.86">
+
+    <!-- Alternate language versions -->
+    <link rel="canonical" href="https://moabi.com/fr/" hreflang="fr" />
+    <link rel="alternate" href="https://moabi.com" hreflang="en" />
+    <link rel="alternate" href="https://moabi.com" hreflang="x-default" />
+
+    <!-- Json-ld information -->
+    <script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@id": "https://moabi.com/index.html#top",
+		"@type": "Organization",
+		"name": "Moabi",
+		"url": "https://moabi.com/",
+		"logo": "https://moabi.com/moabi.png",
+		"email": "info(at)moabi.com",
+		"description": "Moabi : Sicherheit von IoT-Software und -Firmware. Moabi ist eine Online-Plattform zur Analyse der Sicherheit von Firmwares, Binärsoftware und deren Abhängigkeiten.",
+		"address": [
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "Paris, France",
+				"postalCode":"75015",
+				"streetAddress": "33 Avenue du Maine"
+			},
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "San Francisco",
+				"addressRegion": "CA",
+				"postalCode":"94133",
+				"streetAddress": "1640 Stockton Street",
+				"postOfficeBoxNumber": "330143"
+			}
+		],
+		"contactPoint": [
+			{
+				"@type": "ContactPoint",
+				"telephone": "+33188335053",
+				"email": "info(at)moabi.com",
+				"contactType": "sales"
+			},
+			{
+				"@type": "ContactPoint",
+				"email": "moabi(at)moabi.com",
+				"contactType": "customer service",
+				"url": "https://moabi.com"
+			}
+		],
+		"sameAs": [
+			"https://blog.moabi.com",
+			"https://cve.moabi.com",
+			"https://twitter.com/moabi_com",
+			"https://www.linkedin.com/company/moabi-com"
+		]
+	}
+    </script>
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Moabi" />
+    <meta property="og:url" content="https://moabi.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://moabi.com/moabi_card.png" />
+    <meta property="og:description" content="Moabi : Sicherheit von IoT-Software und -Firmware. Moabi ist eine Online-Plattform zur Analyse der Sicherheit von Firmwares, Binärsoftware und deren Abhängigkeiten." />
+    <meta property="og:site_name" content="Moabi">
+
+    <!-- Twitter card integration (works with Open Graph data above) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Moabi Saas platform : binary analysis">
+    <meta name="twitter:site" content="@moabi_com">
+
+    <!-- Yandex indexation -->
+    <meta name="yandex-verification" content="e477bac9aff66624" />
+
+    <!-- Bing indexing -->
+    <meta name="msvalidate.01" content="E6F45B72576D2C71AD0A5B162DF8117D" />
+
+    <!-- Pinterest indexing -->
+    <meta name="p:domain_verify" content="3ff193be13e7fbcb9cdf824778f234c3"/>
+
+    <!-- Preconnect optimization -->
+    <link rel="preconnect" href="https://js.hs-scripts.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <!-- Preload optimization -->
+   <link rel="preload" href="https://moabi.com/fonts/1Ptrg8zYS_SKggPNwIouWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="https://moabi.com/fonts/1Ptrg8zYS_SKggPNwN4rWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="https://moabi.com/fonts/1Ptug8zYS_SKggPNyC0ISg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="https://moabi.com/fonts/1Ptrg8zYS_SKggPNwJYtWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="https://moabi.com/js/modernizr.js" as="script">
+   <link rel="preload" href="https://moabi.com/js/jquery-3.4.1.min.js" as="script">
+   <link rel="preload" href="https://moabi.com/js/lazyload.js" as="script">
+   <link rel="preload" href="https://moabi.com/js/main.js" as="script">
+   <link rel="preload" href="https://moabi.com/js/rev.js" as="script">
+   <link rel="preload" href="https://moabi.com/js/custom.de.js" as="script">
+   <link rel="preload" href="https://moabi.com/js/site.js" as="script">
+
+    <link rel="preload" href="https://moabi.com/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Canonical name -->
+    <link rel="canonical" href="https://moabi.com/de/" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://moabi.com/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="https://moabi.com/favicon-16x16.png" sizes="16x16" />  
+    <link rel="icon" type="image/png" href="https://moabi.com/favicon-32x32.png" sizes="32x32" />  
+    <link rel="icon" type="image/png" href="https://moabi.com/favicon-96x96.png" sizes="96x96" />  
+
+    <!-- Apple icons -->
+    <link rel="apple-touch-icon" sizes="120x120" href="https://moabi.com/apple-120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="https://moabi.com/apple-152.png" />  
+    <link rel="apple-touch-icon" sizes="167x167" href="https://moabi.com/apple-167.png" />  
+    <link rel="apple-touch-icon" sizes="180x180" href="https://moabi.com/apple-180.png" />  
+
+    <!-- Apple Safari -->
+    <link rel="manifest" href="https://moabi.com/site.webmanifest" />
+    <link rel="mask-icon" href="https://moabi.com/safari-pinned-tab.svg" color="#446CDE" />
+
+    <!-- Microsoft Windows/IE11 Start Screen Tile-->
+    <meta name="application-name" content="moabi.com"/>
+    <meta name="msapplication-square70x70logo" content="https://moabi.com/small.jpg"/>
+    <meta name="msapplication-square150x150logo" content="https://moabi.com/medium.jpg"/>
+    <meta name="msapplication-wide310x150logo" content="https://moabi.com/wide.jpg"/>
+    <meta name="msapplication-square310x310logo" content="https://moabi.com/large.jpg"/>
+    <meta name="msapplication-TileColor" content="#446CDE">
+    <meta name="theme-color" content="#446CDE">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129423028-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129423028-1');
+    </script>
+
+    <!-- Note: stylesheets are loaded twice to make up for the lack of preloading in Firefox. See https://stackoverflow.com/questions/45321043/preload-css-file-not-supported-on-firefox-and-safari-mac -->
+    <!-- CSS  Fonts -->
+    <link rel="preload" href="https://moabi.com/css/font-awesome.min.css" as="style" />
+    <link rel="stylesheet" href="https://moabi.com/css/font-awesome.min.css">
+
+    <!-- CSS  -->
+    <link rel="preload" href="https://moabi.com/css/site.css" as="style" />
+    <link rel="stylesheet" href="https://moabi.com/css/site.css">
+
+</head>
+<body class="skew">
+
+    <!-- Noscript tag -->
+    <noscript>Ihr Browser unterstützt kein Javascript: Einige Elemente dieser Seite werden möglicherweise nicht wie erwartet angezeigt.<br /><br /></noscript>
+
+    <!-- Page Wrapper Starts -->
+    <div class="wrapper">
+        <!-- Header Starts -->
+        <header id="header" class="header">
+            <div class="header-inner">
+                <!-- Navbar Starts -->
+                <nav class="navbar navbar-expand-lg p-0" id="singlepage-nav">
+					<!-- Logo Starts -->
+                    <div class="logo">
+                        <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand link-menu scroll-to-target" alt="main slider" href="#mainslider">
+                            <!-- Logo White Starts -->
+                            <img id="logo-light" class="logo-light" src="https://moabi.com/IoT/security/metrics/logo-white.png" alt="Moabi IoT Firmware Security" title="Moabi white logo" decoding="async" />
+                            <!-- Logo White Ends -->
+                            <!-- Logo Black Starts -->
+                            <img id="logo-dark" class="logo-dark" src="https://moabi.com/IoT/security/metrics/logo-white.png" alt="Analytics" title="Moabi logo" decoding="async" />
+                            <!-- Logo Black Ends -->
+                        </a>
+                    </div>
+					<!-- Logo Ends -->
+					<!-- Hamburger Icon Starts -->
+                    <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span id="icon-toggler">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						</span>
+					</button>
+					<!-- Hamburger Icon Ends -->
+					<!-- Navigation Menu Starts -->
+                    <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
+                            <select name="forma" onchange="location = this.value;" style="background-color:transparent;color:#446CDE;font-weight:bold">
+                             <option value="https://moabi.com/de/">Deutsch</option>
+                             <option value="https://moabi.com/">English</option>
+                             <option value="https://moabi.com/fr/">Français</option>
+                             <option value="https://moabi.com/es/">Español</option>
+                             <option value="https://moabi.com/pt/">Portugues</option>
+                             <option value="https://moabi.com/cn/">中国人</option>
+                            </select>
+                        <ul class="nav-menu-inner ml-auto">
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="home" href="#mainslider"><i class="fa fa-home"></i> Hauptmenü</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="platform" href="#platform"><i class="fa fa-cloud"></i> Plattform</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="mission" href="#mission"><i class="fa fa-handshake-o"></i> Mission</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="analytics" href="#analytics"><i class="fa fa-bar-chart"></i> Metriken</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="reports" href="#report"><i class="fa fa-file-pdf-o"></i> Berichte</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="case studies" href="#casestudy"><i class="fa fa-user-o"></i> Fallstudien</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="demo" href="#demo"><i class="fa fa-play"></i> <span style="color:red"> Demo</span></a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="research" href="https://moabi.com/research/jbrossard/" onclick="window.location=$(this).attr('href')"><i class="fa fa-cogs"></i> Forschung</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="blog" href="https://blog.moabi.com/" onclick="window.location=$(this).attr('href')"><i class="fa fa-wordpress"></i> blog</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="members login" href="https://www.moabi.info/" onclick="window.location=$(this).attr('href')"><i class="fa fa-user-circle-o"></i> Mitgliederbereich</a></li>
+                        </ul>
+                    </div>
+					<!-- Navigation Menu Ends -->
+                </nav>
+                <!-- Navbar Ends -->
+            </div>
+        </header>
+		<!-- Header Ends -->
+        <!-- Main Slider Section Starts -->
+        <section class="mainslider" id="mainslider">
+            <!-- Slider Hero Starts -->
+            <div class="rev_slider_wrapper fullwidthbanner-container dark-slider" data-alias="vimeo-hero" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+                <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
+                <div id="rev_slider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-18" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="/IoT/security/metrics/moabi_paris-thumbnail.jpg" data-rotate="0" data-saveperformance="off" data-title="Ken Burns" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="https://moabi.com/IoT/security/metrics/blank.jpg" data-lazyload="/IoT/security/metrics/moabi_paris-1600.jpg" alt="Security Analytics" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="180" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina title="Moabi office background" decoding="async">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">MISSION
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">Sichere Software
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i>
+                            </div>
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','97','90','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#platform" alt="platform" class="custom-button slider-button scroll-to-target">Plattform</a></div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-3" data-transition="zoomin" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="/IoT/security/metrics/moabi_NYC-thumbnail.jpg" data-rotate="0" data-fsmasterspeed="300" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="https://moabi.com/IoT/security/metrics/blank.jpg" data-lazyload="/IoT/security/metrics/moabi_NYC-1600.jpg" alt="Validation" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="180" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina title="Moabi NYC background" decoding="async">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">Online-Plattform
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">Automatisierte Sicherheitsberichterstattung
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i>
+                            </div>
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','97','90','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#analytics" alt="analytics" class="custom-button slider-button scroll-to-target">Metriken</a></div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-2" data-transition="zoomin" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="/IoT/security/metrics/moabi_singapore-thumbnail.jpg" data-rotate="0" data-fsmasterspeed="300" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="https://moabi.com/IoT/security/metrics/blank.jpg" data-lazyload="/IoT/security/metrics/moabi_singapore-1600.jpg" alt="Cloud Based Software Verification" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="180" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina title="Moabi Singapore background" decoding="async">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">VERTEIDIGUNGSOBERFLÄCHE
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">Objektivierung der Sicherheitspositionierung
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i>
+                            </div>
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','97','90','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#mission" alt="mission" class="custom-button slider-button scroll-to-target">Mission</a></div>
+                        </li>
+                    </ul>
+                    <div class="tp-static-layers"></div>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
+            </div>
+            <!-- END REVOLUTION SLIDER -->
+            <!-- Slider Hero Ends -->
+        </section>
+        <!-- Main Slider Section Ends -->
+
+
+
+
+        <!-- Logos Section Starts -->
+        <section class="logos">
+            <div class="container">
+                <ul class="bxslider" id="bxslider">
+                    <!-- Logos Items Starts -->
+
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="Assises" src="https://moabi.com/logos-slider/assises.png" alt="Assises de la Sécurité"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="BPI" src="https://moabi.com/logos-slider/BPI.png" alt="BPI"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="IIC" src="https://moabi.com/logos-slider/IIC.png" alt="Industrial Internet Consortium"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="Generate" src="https://moabi.com/logos-slider/generate.png" alt="Generate"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="DisruptSF" src="https://moabi.com/logos-slider/DisruptSF.png" alt="Disrupt SF"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="IoXT" src="https://moabi.com/logos-slider/ioxt.png" alt="IoXT"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="IDF" src="https://moabi.com/logos-slider/idf.png" alt="Ile de France"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="IoTSF" src="https://moabi.com/logos-slider/IoTSF.png" alt="IoTSF"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="InnovUP" src="https://moabi.com/logos-slider/logoinnovup.jpg" alt="InnovUp"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="Avenir" src="https://moabi.com/logos-slider/avenir.png" alt="Avenir"></li>
+                    <!-- Logos Items Ends -->
+                </ul>
+            </div>
+            <br /><br />
+        </section>
+        <!-- Logos Section Ends -->
+
+
+
+
+
+        <!-- About Section Starts -->
+        <section id="platform" class="about">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>Plattform</span></h1>
+                    <h4>Kontinuierlicher Prozess zur Verbesserung der Sicherheit</h4>
+                </div>
+                <!-- Main Heading Ends -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cloud" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- About Content Starts -->
+                <div class="row about-content">
+                    <div class="col-sm-12 col-md-12 col-lg-6 about-left-side">
+                        <h3 class="title-about">Metriken und <span style="color:#446CDE;font-weight:bolder">Berichte</span> <span style="color:#446CDE;font-weight:bolder">Sicherheit</span></h3>
+                        <hr>
+
+			<p>Software ist überall: von der Cloud über IoT- und Industriesoftware bis hin zu Autos und eingebetteter Software, Heimautomation, 5G ... <br> <br /> Ist die von Ihnen verwendete Software sicher? Wird Ihre Lieferkette kontinuierlich überwacht, um die Sicherheit Ihres Unternehmens zu verbessern? <br> <br /> Moabi unterstützt Sie bei der Messung und kontinuierlichen Verbesserung Ihrer Entwicklungsprozesse, um das Beste aus Ihnen herauszuholen Ihre digitale Transformation. <br> <br /> Moabi verbessert die Analyse, Qualität und das Verständnis aller Arten von Software. Ob intern entwickelt oder ausgelagert, von unabhängigen Softwareanbietern oder aus Open Source hergestellt.
+</p>
+
+						<!-- Tabs Heading Starts -->
+                        <ul class="nav nav-tabs">
+                            <li><a class="active" data-toggle="tab" alt="services" href="#menu1">Dienstleistungen</a></li>
+                            <li><a data-toggle="tab" alt="performance" href="#menu2" >Leistung</a></li>
+                            <li><a data-toggle="tab" alt="benefits" href="#menu3" >Gewinne</a></li>
+                        </ul>
+                        <!-- Tabs Heading Ends -->
+                        <!-- Tabs Content Starts -->
+                        <div class="tab-content">
+                            <div id="menu1" class="tab-pane fade in active">
+				<p> Messen Sie Ihre Software anhand von 5 Metriken: <br />
+				<b> Technische Schulden, Kryptographie, Compliance, Tiefenverteidigung, Sicherheitslücken. </b> <br /> <br />
+				Erhalten Sie automatisierte Berichte: <br />
+				<b> Analyseberichte, Compliance-Berichte. </b>
+				</p>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <p>
+				<li> <strong> Schnell </strong> Analysieren Sie täglich Tausende von Programmen. </li>
+				<li> <strong> Einfach </strong> Analyse ganzer Betriebssysteme, Cloud-Images oder vollständiger IoT-Firmware. </li>
+				<li> <strong> Skalierbar </strong> Nutzen Sie die künstliche Intelligenz im Cloud-Modus. </li>
+				<li> <strong> Uniform </strong> verwenden dasselbe Repository für IoT, mobile Anwendungen oder Industrie- oder Unternehmenssoftware. </li>
+				<li> <strong> Kein Quellcode erforderlich </strong> Analysieren Sie Anwendungen und Bibliotheken von Drittanbietern. </li>
+				</p>
+                            </div>
+                            <div id="menu3" class="tab-pane fade">
+                                <p>
+				<li> <strong> Kostenkontrolle </strong> einfaches und vorhersehbares Abonnement. </li>
+				<li> <strong> On-Demand-Dienste </strong> zahlen nur für die von Ihnen genutzten Dienste. </li>
+				<li> <strong> Compliance </strong> profitiert kontinuierlich von der Integration neuer Normen und Standards. </li>
+				<li> <strong> Software von Drittanbietern </strong> Erhalten Sie Indikatoren für Ihre Lieferanten und Software von Drittanbietern. </li>
+				<li> <strong> Kostenkontrolle </strong> antizipieren die Kosten für die Softwarewartung. </li>
+				</p>
+                            </div>
+                        </div>
+                        <!-- Tabs Content Ends -->
+                        <a class="custom-button scroll-to-target" alt="analytics" href="#analytics">Metriken</a>
+                    </div>
+                    <div class="col-md-12 col-lg-6 about-right">
+						<div class="about-right-side">
+							<img class="img-fluid" src="https://moabi.com/IoT/security/metrics/mission.jpg" alt="Mission" height="385" width="576" title="Moabi mission" decoding="async">
+						</div>
+                    </div>
+                </div>
+                <!-- About Content Ends -->
+            </div>
+            <!-- Container Ends -->
+        </section>
+        <!-- About Section Ends -->
+        <!-- Video Section Starts -->
+        <section id="mission" class="videopromotion lazyload" src="https://moabi.com/IoT/security/metrics/blank.jpg" data-src="https://moabi.com/IoT/security/metrics/moabi_paris-1600.jpg" decoding="async" style="width: 80%;margin-left: 10%;" >
+            <div class="section-overlay">
+                <!-- Container Starts -->
+                <div class="container">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h1>Moabi : Mission</h1>
+                        <h4>Sichere Software</h4>
+                    </div>
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-handshake-o" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                    <!-- Main Heading Ends -->
+                    <div class="video-content">
+			<p />
+                        <p class="text-center"><span style="color:white">Verteidigungsmetriken und -oberfläche: Bewerten Sie die Sicherheitspositionierung in jeder Phase des Entwicklungszyklus (SSDLC) anhand von 5 Schlüsselmetriken und erhalten Sie Compliance-Berichte</span></p>
+			<p />
+                        <!-- Video Play Starts -->
+                        <div class="magnific-popup-gallery">
+                            <div class="btn-wrapper text-center"><a class="image-wrap mfp-youtube" alt="Moabi Präsentationsvideo" aria-label="Moabi Präsentationsvideo"  href="https://www.youtube.com/watch?v=40dEEyxAgo0" crossorigin="anonymous"></a></div>
+                        </div>
+                        <!-- Video Play Ends -->
+                    </div>
+                </div>
+                <!-- Container Ends -->
+            </div>
+        </section>
+        <!-- Video Section Ends -->
+        <!-- Services Section Starts -->
+        <section id="analytics" class="services">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>Metriken</span></h1>
+                    <h4>Die 5 wichtigsten Sicherheitsmetriken</h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-bar-chart" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- Services Starts -->
+                <div class="row services-box">
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-microchip" data-headline="Technische Schulden"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-microchip">
+                            <h2>Technische Schulden</h2>
+                            <p>Bewertung der technischen Verschuldung von Architekturen und Kompilierungsketten.</p>
+                            <a href="https://blog.moabi.com/2019/05/08/legacy/">Erfahren Sie mehr</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-lock" data-headline="Kryptographie"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-lock">
+                            <h2>Kryptographie</h2>
+                            <p>Identifizieren und quantifizieren Sie die Ausfallsicherheit kryptografischer Algorithmen und erkennen Sie automatisch die in Ihren Anwendungen verwendeten Verschlüsselungsalgorithmen.</p>
+                            <a href="https://blog.moabi.com/2019/05/08/cryptography/">Erfahren Sie mehr</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-balance-scale" data-headline="Compliance"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-balance-scale">
+                            <h2>Compliance</h2>
+                            <p>Überprüfen Sie die Softwarekonformität mit Industriestandards und Best Practices. Erwarten Sie zukünftige Kompatibilitätsprobleme.</p>
+                            <a href="https://blog.moabi.com/2019/05/08/compliance/">Erfahren Sie mehr</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-cogs" data-headline="Verteidigung in der Tiefe"></span>
+                        <!-- Service Item Cover Ends -->
+                        <div class="services-box-item-content fa fa-cogs">
+                            <h2>Verteidigung in der Tiefe</h2>
+                            <p>Überprüfen Sie, ob Ihre Software über Abwehrmechanismen gegen gängige Angriffsmethoden verfügt.</p>
+                            <a href="https://blog.moabi.com/2019/05/08/hardening/">Erfahren Sie mehr</a>
+                        </div>
+                    </div>
+                    <!-- Service Item Ends -->
+
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-warning" data-headline="Sicherheitslücken"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-warning">
+                            <h2>Sicherheitslücken</h2>
+                            <p>Erkennen Sie bekannte Schwachstellen (CVEs) mithilfe der symbolischen Ausführungs-Engine von Moabi als unbekannt (0 Tage).</p>
+                            <a href="https://blog.moabi.com/2019/05/08/vulnerabilities/">Erfahren Sie mehr</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+                </div>
+                <!-- Services Ends -->
+            </div>
+        </section>
+        <!-- Services Section Ends -->
+        <!-- Reports Starts -->
+        <section id="report" class="services lazyload" src="https://moabi.com/IoT/security/metrics/blank.jpg" data-src="https://moabi.com/IoT/security/metrics/moabi_NYC-1600.jpg" decoding="async" style="width: 80%;margin-left: 10%;">
+            <!-- Container Starts -->
+            <div class="section-overlay" id="report-beauty">
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span style="color:white">MOABI-Berichte</span></h1>
+                    <h4><span style="color:white">3 Arten von Berichten</span></h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-file-pdf-o" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- Services Starts -->
+                <div class="row services-box">
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-bar-chart-o" data-headline="Ebenenanalysebericht 1"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-bar-chart-o">
+                            <h2>Ebenenanalysebericht 1</h2>
+                            <p>Diese erste Analyseebene bietet eine Zusammenfassung aller Metriken, die während der statischen Analyse von Software für Entscheidungsträger berechnet wurden.</p>
+                            <a href="https://blog.moabi.com/2019/05/08/analytics-report-level-1-a1/">Erfahren Sie mehr</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-pie-chart" data-headline="Ebenenanalysebericht 2"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-pie-chart">
+                            <h2>Ebenenanalysebericht 2</h2>
+                            <p>Diese zweite Analyseebene enthält einen detaillierten technischen Bericht, der alle Schwachstellen und Schwachstellen abdeckt, die während der statischen Softwareanalyse festgestellt wurden.</p>
+                            <a href="https://blog.moabi.com/2019/05/08/analytics-report-level-2-a2/">Erfahren Sie mehr</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-ambulance" data-headline="Compliance-Berichte"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-ambulance">
+                            <h2>Compliance-Berichte</h2>
+                            <p>Erhalten Sie Compliance-Berichte, um festgestellte Schwachstellen und Schwachstellen zu beheben, sowie Empfehlungen, um Ihre Software sicherer und robuster zu machen und zukünftige Software-Abstürze zu antizipieren.</p>
+                            <a href="https://blog.moabi.com/2019/05/08/remediation-reports/">Erfahren Sie mehr</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+                </div>
+                <!-- Services Ends -->
+            </div>
+            </div>
+        </section>
+        <!-- Reports Section Ends -->
+        <!-- Portfolio Section Starts -->
+        <section id="casestudy" class="portfolio">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>Fallstudien</span></h1>
+                    <h4>Moabi Metrics in Aktion</h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-user-o" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- Filter Wrapper Starts -->
+                <nav>
+                    <ul class="simplefilter nav nav-pills d-block">
+                        <!-- Filter Wrapper Items Starts -->
+                        <li class="active" data-filter="all"><i class="fa fa-reorder"></i> Alle Themen</li>
+                        <li data-filter="1">Metriken</li>
+                        <li data-filter="4">Fallstudien</li>
+                        <li data-filter="2">Videos</li>
+                        <li data-filter="5">Forschung</li>
+                        <li data-filter="3">Beispiele</li>
+                        <!-- Filter Wrapper Items Ends -->
+                    </ul>
+                </nav>
+                <!-- Filter Wrapper Ends -->
+                <div>
+                    <div class="filtr-container">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/hardening/" title="Verteidigung in der Tiefe: Überprüfen Sie, ob Ihre Software über Abwehrmechanismen gegen gängige Angriffsmethoden verfügt." alt="Verteidigung in der Tiefe"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/hardening.jpg" alt="Verteidigung in der Tiefe" height="385" width="576" title="Verteidigung in der Tiefe" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Verteidigung in der Tiefe</h3>
+                                    <p>Tiefenverteidigungsmechanismen.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/vulnerabilities/" title="Sicherheitslücken: Erkennen Sie bekannte Schwachstellen (CVEs) mithilfe der symbolischen Ausführungs-Engine von Moabi als unbekannt (0 days)." alt="Moabi métrique de vulnérabilité"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/assessment.jpg" alt="Sicherheitslücken" height="385" width="576" title="Moabi-Schwachstellenmetrik" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Sicherheitslücken</h3>
+                                    <p>Erkennen Sie bekannte Schwachstellen als unbekannt.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="4">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/automotive/" title="Analysieren Sie in ein Auto eingebettete Software von Drittanbietern, auch wenn deren Quellcode nicht verfügbar ist." alt="Automobil-Fallstudie"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/automotive.jpg" alt="Automobil" height="385" width="576" title="Moabi : étude de cas automobile" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Automobil</h3>
+                                    <p>Analysieren Sie Software von Drittanbietern.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/legacy/" title="Technische Verschuldung: Bewertung der Technischen Schulden von Architekturen und Zusammenstellungsketten." alt="Moabi: Messung der technischen Verschuldung"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/legacy.jpg" alt="Moabi: Messung der technischen Verschuldung" height="385" width="576" title="Moabi: Messung der technischen Verschuldung" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Technische Schulden</h3>
+                                    <p>technische Verschuldung von Anträgen.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="4">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/edge-computing/" title="Implementierung einer Edge Computing-Sicherheitsrichtlinie unter Verwendung von Moabi-Metriken." alt="Edge computing"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/edge.jpg" alt="Edge Computing" height="385" width="576" title="Moabi : Edge computing" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Edge computing</h3>
+                                    <p>Nutzen Sie die 4. industrielle Revolution.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="2">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap mfp-youtube" aria-label="Moabi Präsentationsvideo"  href="https://www.youtube.com/watch?v=40dEEyxAgo0" crossorigin="anonymous" alt="Moabi Präsentationsvideo"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/trailer1.jpg" alt="Moabi Präsentationsvideo" height="385" width="576" title="Moabi Präsentationsvideo" decoding="async" /><span class="zoom-icon video-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Moabi Präsentationsvideo</h3>
+                                    <p>les 5 métriques de Moabi en action.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/cryptography/" title="Kryptographie: Identifizieren und quantifizieren Sie die Ausfallsicherheit kryptografischer Algorithmen" alt="Moabi : Kryptographie"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/cryptographicciphers.jpg" alt="Kryptographie" height="385" width="576" title="Moabi : métrique cryptographique" decoding="async" /><span class="zoom-icon gallery-icon"></span></a>
+                                </figure>
+
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Kryptographie</h3>
+                                    <p>Robustheit kryptografischer Algorithmen.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="4">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/iiot/" title="Genießen Sie mit Moabi auf sichere Weise das volle Potenzial des IIoT." alt="IIoT"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/iiot.jpg" alt="IIoT" height="385" width="576" title="Genießen Sie mit Moabi auf sichere Weise das volle Potenzial des IIoT." decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>IIoT</h3>
+                                    <p>Sichern Sie sich die 4. industrielle Revolution.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="3">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://github.com/moabi-com/test_samples" title="Beispiele: Testprogramme herunterladen." alt="Moabi: Testprogramme"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/samples.jpg" alt="Exemples" height="385" width="576" title="Moabi: Testprogramme" decoding="async" /><span class="zoom-icon external-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Beispiele</h3>
+                                    <p>Laden Sie Testprogramme herunter.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/compliance/" title="Einhaltung industrieller Standards" alt="Einhaltung industrieller Standards"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/compliance.jpg" alt="Compliance" height="385" width="576" title="Einhaltung industrieller Standards" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Compliance</h3>
+                                    <p>Überprüfen Sie die Einhaltung der Industriestandards.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="2">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap mfp-youtube" aria-label="Présentation Moabi à RSA 2020"  href="https://www.youtube.com/watch?v=xgUiZxFxdF4" crossorigin="anonymous" alt="Présentation Moabi à RSA 2020"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/trailer2.jpg" alt="Moabi Demo" height="385" width="576" title="Présentation Moabi à RSA 2020" decoding="async" /><span class="zoom-icon video-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Moabi-Präsentation auf der RSA 2020</h3>
+                                    <p>Video unserer Präsentation auf der RSAC 2020.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="5">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://moabi.com/research/jbrossard/" title="Letzte Suche" alt="Letzte Suche"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/research.jpg" alt="Letzte Suche" height="385" width="576" title="Letzte Suche" decoding="async" /><span class="zoom-icon external-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Suche</h3>
+                                    <p>neueste Veröffentlichungen.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="4">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/5g/" title="5G: Seien Sie bereit für die bevorstehende Revolution mit 5G." alt="5G-Fallstudie"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/5g.jpg" alt="5G" height="385" width="576" title="5G-Fallstudie" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>5G</h3>
+                                    <p>Machen Sie sich bereit für 5G! Sicher.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<br /><br /><br /><br />
+            </div>
+            <!-- Container Ends -->
+        </section>
+        <!-- Portfolio Section Ends -->
+
+        <!-- Contact Form Section Starts -->
+        <section id="demo" class="contactform lazyload" data-src="https://moabi.com/IoT/security/metrics/moabi_paris-1600.jpg" decoding="async" style="width: 80%;margin-left: 10%;">
+            <div class="section-overlay">
+                <div class="container">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h2><span style="font-size:48px">Fordern Sie einen Test an</span></h2>
+                        <h4>Bereit für eine Demo? Fordern Sie mit diesem Formular einen Test an</h4>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <div class="form-container">
+                        <!-- Contact Form Starts -->
+                        <form action="https://share.hsforms.com/1ej9mbT9kTEa_IWEdjKRpcg3b1qs">
+                            <div class="row form-inputs">
+                                <!-- First Name Field Starts -->
+                                <div class="col-md-6 form-group custom-form-group">
+                                    <span class="input custom-input">
+										<input placeholder="Vorname" class="input-field custom-input-field" id="firstname" name="firstname" autocomplete='given-name' type="text" data-error="NEW ERROR MESSAGE" aria-label="firstname"  required >
+										<label class="input-label custom-input-label" >
+											<i class="fa fa-user icon icon-field"></i>
+										</label>
+									</span>
+                                </div>
+                                <!-- First Name Field Ends -->
+                                <!-- Last Name Field Starts -->
+                                <div class="col-md-6 form-group custom-form-group">
+                                    <span class="input custom-input">
+										<input placeholder="Nachname" class="input-field custom-input-field" id="lastname" name="lastname" autocomplete='family-name' type="text" aria-label="lastname"  required >
+										<label class="input-label custom-input-label" >
+											<i class="fa fa-user icon icon-field"></i>
+										</label>
+									</span>
+                                </div>
+                                <!-- Last Name Field Ends -->
+                                <!-- Job Title Field Starts -->
+                                <div class="col-md-6 form-group custom-form-group">
+                                    <span class="input custom-input">
+                                    <input placeholder="Post-Titel" class="input-field custom-input-field" id="message" name="jobtitle" autocomplete='job-title' type="text" aria-label="job-title"  required >
+										<label class="input-label custom-input-label" >
+											<i class="fa fa-user-o icon icon-field"></i>
+										</label>
+									</span>
+                                </div>
+                                <!-- Job Title Field Ends -->
+                                <!-- Company Field Starts -->
+                                <div class="col-md-6 form-group custom-form-group">
+                                    <span class="input custom-input">
+                                    <input placeholder="Firma" class="input-field custom-input-field" id="company" name="company" autocomplete='company' type="text" aria-label="company"  required >
+										<label class="input-label custom-input-label" >
+											<i class="fa fa-user-o icon icon-field"></i>
+										</label>
+									</span>
+                                </div>
+                                <!-- Company Field Ends -->
+
+                                <!-- Email Name Field Starts -->
+                                <div class="col-md-6 form-group custom-form-group">
+                                    <span class="input custom-input">
+										<input placeholder="Email" class="input-field custom-input-field" id="email" name="email" autocomplete='email' type="text" aria-label="email"  required >
+										<label class="input-label custom-input-label" >
+											<i class="fa fa-envelope icon icon-field"></i>
+										</label>
+									</span>
+                                </div>
+                                <!-- Email Name Field Ends -->
+                                <!-- Submit Button Starts -->
+                                <div class="col-md-6 submit-form">
+                                    <button id="form-submit" name="submit" type="submit" class="custom-button" aria-label="request demo" title="Send">Fordern Sie eine Demo an</button>
+                                </div>
+                                <!-- Submit Button Ends -->
+                                <!-- Form Submit Message Starts -->
+                                <div class="col-sm-12 text-center output_message_holder d-none">
+                                    <p class="output_message"></p>
+                                </div>
+                                <!-- Form Submit Message Ends -->
+                            </div>
+                        </form>
+                        <!-- Contact Form Ends -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form Section Ends -->
+
+        <!-- Footer Section Starts -->
+        <footer class="footer text-center">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Copyright Text Starts -->
+                <p><a href="https://moabi.com" alt="Moabi main page">MOABI - Sichere Software</a></p>
+                <br />
+                    &copy; Copyright 2010-2020 <a href="https://moabi.com" alt="Moabi.com">MOABI.com</a>
+                </p>
+                <!-- Copyright Text Ends -->
+                <!-- Social Media Links Starts -->
+                <div class="social-icons">
+                    <ul class="social">
+                        <li>
+                            <a class="linkedin"  href="https://www.linkedin.com/company/moabi-com" title="linkedin" alt="Moabi Linkedin page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="twitter"  href="https://twitter.com/moabi_com" title="twitter" alt="Moabi Twitter page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="facebook"  href="https://www.facebook.com/moabi.info" title="facebook" alt="Moabi Facebook page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="youtube"  href="https://www.youtube.com/moabi" title="youtube" alt="Moabi Youtube page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="github"  href="https://github.com/moabi-com/test_samples/" title="github" alt="Moabi Github page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="slideshare"  href="http://slideshare.net/endrazine/" title="slideshare" alt="Moabi Slideshare" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="wordpress"  href="https://blog.moabi.com" title="wordpress" alt="Moabi blog" crossorigin="anonymous" ></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media Links Ends -->
+
+	    <!-- Legal disclaimers -->
+
+		<a  href="https://sway.office.com/s/ZGZJ9H4Acjpmeiv1/embed" crossorigin="anonymous" alt="Moabi Statement of privacy" >Datenschutzbestimmungen</a><p />
+		<a  href="https://sway.office.com/s/77E2E35BSeGykIj0/embed" crossorigin="anonymous" alt="Moabi terms of use" >Nutzungsbedingungen der Moabi-Website</a>
+
+	    <!-- End of Legal disclaimers -->
+
+            </div>
+            <!-- Container Ends -->
+        </footer>
+        <!-- Footer Section Starts -->
+        <!-- Back To Top Starts -->
+        <div id="back-top-wrapper" class="d-none d-sm-block">
+            <p id="back-top">
+                <a href="index.html#top" alt="back to top"><span> </span></a>
+            </p>
+        </div>
+        <!-- Back To Top Ends -->
+    </div>
+    <!-- Wrapper Ends -->
+
+    <!-- Template JS Files -->
+    <script type="text/javascript" src="https://moabi.com/js/modernizr.js"></script>
+    <script type="text/javascript" src="https://moabi.com/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://moabi.com/js/main.js"></script>
+    <script type="text/javascript" src="https://moabi.com/js/lazyload.js"></script>
+    <!-- Revolution Slider Main JS Files -->
+    <script defer type="text/javascript" src="https://moabi.com/js/rev.js"></script>
+    <!-- Revolution Slider Extensions -->
+    <script defer type="text/javascript" src="https://moabi.com/js/site.js"></script>
+    <!-- Main JS Initialization File -->
+    <script defer type="text/javascript" src="https://moabi.com/js/custom.de.js"></script>
+
+    <!-- Add javascript listener -->
+    <script type="text/javascript">
+	jQuery.event.special.touchstart = {
+	  setup: function( _, ns, handle ){
+	   if ( ns.includes("noPreventDefault") ) {
+	     this.addEventListener("touchstart", handle, { passive: false });
+	   } else {
+	     this.addEventListener("touchstart", handle, { passive: true });
+	  }
+	 }
+	};
+	jQuery.event.special.touchmove = {
+	   setup: function( _, ns, handle ){
+	      if ( ns.includes("noPreventDefault") ) {
+		 this.addEventListener("touchmove ", handle, { passive: false });
+	      } else {
+		 this.addEventListener("touchmove ", handle, { passive: true });
+	      }
+	   }
+	};
+    </script>
+
+    <!-- Lazy loading of images handler -->
+    <script type="text/javascript">
+	window.addEventListener("load", function(event) {
+	    lazyload();
+	});
+    </script>
+
+    <!-- Add Service Worker -->
+    <script type="text/javascript">
+	if ('serviceWorker' in navigator) {
+	  // Register a service worker hosted at the root of the
+	  // site using the default scope.
+	  navigator.serviceWorker.register('https://moabi.com/service-worker.js').then(function(registration) {
+	    console.log('Service worker registration succeeded:', registration);
+	  }, /*catch*/ function(error) {
+	    console.log('Service worker registration failed:', error);
+	  });
+	} else {
+	  console.log('Service workers are not supported.');
+	}
+    </script>
+
+    <!-- Revolution Slider Initialization Starts -->
+    <script type="text/javascript">
+!function(){"use strict";var e=jQuery;e(document).ready(function(){null==e("#rev_slider").revolution?revslider_showDoubleJqueryError("#rev_slider"):e("#rev_slider").show().revolution({sliderType:"standard",jsFileLocation:"js/plugins/revolution/js/",dottedOverlay:"none",sliderLayout:"fullscreen",delay:9e3,navigation:{keyboardNavigation:"off",keyboard_direction:"horizontal",mouseScrollNavigation:"off",onHoverStop:"off",touch:{touchenabled:"on",swipe_threshold:75,swipe_min_touches:1,swipe_direction:"horizontal",drag_block_vertical:!1},arrows:{style:"zeus",enable:!0,hide_onmobile:!0,hide_under:600,hide_onleave:!0,hide_delay:200,hide_delay_mobile:1200,tmp:'<div class="tp-title-wrap">  \t<div class="tp-arr-imgholder"></div> </div>',left:{h_align:"left",v_align:"center",h_offset:90,v_offset:0},right:{h_align:"right",v_align:"center",h_offset:90,v_offset:0}},bullets:{enable:!1,hide_onmobile:!0,hide_under:600,style:"metis",hide_onleave:!0,hide_delay:200,hide_delay_mobile:1200,direction:"horizontal",h_align:"center",v_align:"bottom",h_offset:0,v_offset:30,space:5,tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span>'}},viewPort:{enable:!0,outof:"pause",visible_area:"80%"},responsiveLevels:[1240,1024,778,480],gridwidth:[1240,1024,778,480],gridheight:[600,600,500,400],lazyType:"none",parallax:{type:"mouse",origo:"slidercenter",speed:2e3,levels:[2,3,4,5,6,7,12,16,10,50]},shadow:0,spinner:"off",stopLoop:"off",stopAfterLoops:-1,stopAtSlide:-1,shuffle:"off",hideThumbsOnMobile:"off",autoHeight:"off",hideSliderAtLimit:0,hideCaptionAtLimit:0,hideAllCaptionAtLilmit:0,debugMode:!1,fallbacks:{simplifyAll:"off",nextSlideOnWindowFocus:"off",disableFocusListener:!1}})})}(jQuery);
+    </script>
+    <!-- Revolution Slider Initialization Ends -->
+
+    <!-- HubSpot Embed Code -->
+    <script async defer type="text/javascript" id="hs-script-loader" src="https://js.hs-scripts.com/5554324.js"></script>
+
+</body>
+</html>
