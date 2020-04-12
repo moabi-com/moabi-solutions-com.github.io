@@ -2,11 +2,30 @@ User-agent: *
 Allow: /IoT
 Allow: /blog
 Allow: /news
+Allow: /cn/
+Allow: /de/
+Allow: /es/
+Allow: /fr/
+Allow: /jp/
+Allow: /pt/
+
 
 User-agent: Twitterbot
+Allow: /cn/
+Allow: /de/
+Allow: /es/
+Allow: /fr/
+Allow: /jp/
+Allow: /pt/
 Allow: /IoT
 
 User-agent: facebookexternalhit
+Allow: /cn/
+Allow: /de/
+Allow: /es/
+Allow: /fr/
+Allow: /jp/
+Allow: /pt/
 Allow: /IoT
 
 #Sitemap
