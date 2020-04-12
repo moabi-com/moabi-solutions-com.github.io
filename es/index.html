@@ -993,7 +993,7 @@
     <script defer src="https://moabi.com/js/custom.es.js"></script>
 
     <!-- Add javascript listener -->
-    <script type="text/javascript">
+    <script>
 	jQuery.event.special.touchstart = {
 	  setup: function( _, ns, handle ){
 	   if ( ns.includes("noPreventDefault") ) {
@@ -1015,14 +1015,14 @@
     </script>
 
     <!-- Lazy loading of images handler -->
-    <script type="text/javascript">
+    <script>
 	window.addEventListener("load", function(event) {
 	    lazyload();
 	});
     </script>
 
     <!-- Add Service Worker -->
-    <script type="text/javascript">
+    <script>
 	if ('serviceWorker' in navigator) {
 	  // Register a service worker hosted at the root of the
 	  // site using the default scope.
@@ -1037,7 +1037,7 @@
     </script>
 
     <!-- Revolution Slider Initialization Starts -->
-    <script type="text/javascript">
+    <script>
 !function(){"use strict";var e=jQuery;e(document).ready(function(){null==e("#rev_slider").revolution?revslider_showDoubleJqueryError("#rev_slider"):e("#rev_slider").show().revolution({sliderType:"standard",jsFileLocation:"js/plugins/revolution/js/",dottedOverlay:"none",sliderLayout:"fullscreen",delay:9e3,navigation:{keyboardNavigation:"off",keyboard_direction:"horizontal",mouseScrollNavigation:"off",onHoverStop:"off",touch:{touchenabled:"on",swipe_threshold:75,swipe_min_touches:1,swipe_direction:"horizontal",drag_block_vertical:!1},arrows:{style:"zeus",enable:!0,hide_onmobile:!0,hide_under:600,hide_onleave:!0,hide_delay:200,hide_delay_mobile:1200,tmp:'<div class="tp-title-wrap">  \t<div class="tp-arr-imgholder"></div> </div>',left:{h_align:"left",v_align:"center",h_offset:90,v_offset:0},right:{h_align:"right",v_align:"center",h_offset:90,v_offset:0}},bullets:{enable:!1,hide_onmobile:!0,hide_under:600,style:"metis",hide_onleave:!0,hide_delay:200,hide_delay_mobile:1200,direction:"horizontal",h_align:"center",v_align:"bottom",h_offset:0,v_offset:30,space:5,tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span>'}},viewPort:{enable:!0,outof:"pause",visible_area:"80%"},responsiveLevels:[1240,1024,778,480],gridwidth:[1240,1024,778,480],gridheight:[600,600,500,400],lazyType:"none",parallax:{type:"mouse",origo:"slidercenter",speed:2e3,levels:[2,3,4,5,6,7,12,16,10,50]},shadow:0,spinner:"off",stopLoop:"off",stopAfterLoops:-1,stopAtSlide:-1,shuffle:"off",hideThumbsOnMobile:"off",autoHeight:"off",hideSliderAtLimit:0,hideCaptionAtLimit:0,hideAllCaptionAtLilmit:0,debugMode:!1,fallbacks:{simplifyAll:"off",nextSlideOnWindowFocus:"off",disableFocusListener:!1}})})}(jQuery);
     </script>
     <!-- Revolution Slider Initialization Ends -->
