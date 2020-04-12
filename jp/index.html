@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="jp" xml:lang="jp" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Moabi : ソフトウェアとファームウェアのセキュリティ。 Moabiは、ファームウェア、バイナリソフトウェア、およびそれらの依存関係のセキュリティ分析に特化したオンラインプラットフォームです。">
+    <meta name="keywords" content="バイナリ分析、予防セキュリティメトリック、IoTセキュリティ、ファームウェアセキュリティ、IIoTセキュリティ、予防セキュリティ、セキュリティメトリック">
+    <title>Moabi - Sécuriser les Logiciels</title>
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://moabi.com https://m.moabi.com ; script-src 'self' https://moabi.com https://m.moabi.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-banner.com https://js.hs-analytics.net https://track.hubspot.com 'unsafe-inline'; connect-src 'self' https://moabi.com https://m.moabi.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com ; img-src 'self' data: https://moabi.com https://m.moabi.com https://www.google-analytics.com https://track.hubspot.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://moabi.com https://m.moabi.com https://tagmanager.google.com/ https://fonts.googleapis.com/ 'unsafe-inline' ; font-src 'self' https://moabi.com https://m.moabi.com https://fonts.googleapis.com https://fonts.gstatic.com/ ; frame-src https://www.youtube.com/ https://youtube.com/ ; base-uri 'self' https://moabi.com https://m.moabi.com ;" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.86">
+
+    <!-- Alternate language versions -->
+    <link rel="canonical" href="https://moabi.com/fr/" hreflang="fr" />
+    <link rel="alternate" href="https://moabi.com" hreflang="en" />
+    <link rel="alternate" href="https://moabi.com" hreflang="x-default" />
+
+    <!-- Json-ld information -->
+    <script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@id": "https://moabi.com/index.html#top",
+		"@type": "Organization",
+		"name": "Moabi",
+		"url": "https://moabi.com/",
+		"logo": "https://moabi.com/moabi.png",
+		"email": "info(at)moabi.com",
+		"description": "Moabi : IoTソフトウェアとファームウェアのセキュリティ。 Moabiは、ファームウェア、バイナリソフトウェア、およびそれらの依存関係のセキュリティ分析に特化したオンラインプラットフォームです。",
+		"address": [
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "Paris, France",
+				"postalCode":"75015",
+				"streetAddress": "33 Avenue du Maine"
+			},
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "San Francisco",
+				"addressRegion": "CA",
+				"postalCode":"94133",
+				"streetAddress": "1640 Stockton Street",
+				"postOfficeBoxNumber": "330143"
+			}
+		],
+		"contactPoint": [
+			{
+				"@type": "ContactPoint",
+				"telephone": "+33188335053",
+				"email": "info(at)moabi.com",
+				"contactType": "sales"
+			},
+			{
+				"@type": "ContactPoint",
+				"email": "moabi(at)moabi.com",
+				"contactType": "customer service",
+				"url": "https://moabi.com"
+			}
+		],
+		"sameAs": [
+			"https://blog.moabi.com",
+			"https://cve.moabi.com",
+			"https://twitter.com/moabi_com",
+			"https://www.linkedin.com/company/moabi-com"
+		]
+	}
+    </script>
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Moabi" />
+    <meta property="og:url" content="https://moabi.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://moabi.com/moabi_card.png" />
+    <meta property="og:description" content="Moabi : IoTソフトウェアとファームウェアのセキュリティ。 Moabiは、ファームウェア、バイナリソフトウェア、およびそれらの依存関係のセキュリティ分析に特化したオンラインプラットフォームです。" />
+    <meta property="og:site_name" content="Moabi">
+
+    <!-- Twitter card integration (works with Open Graph data above) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Moabi Saas platform : binary analysis">
+    <meta name="twitter:site" content="@moabi_com">
+
+    <!-- Yandex indexation -->
+    <meta name="yandex-verification" content="e477bac9aff66624" />
+
+    <!-- Bing indexing -->
+    <meta name="msvalidate.01" content="E6F45B72576D2C71AD0A5B162DF8117D" />
+
+    <!-- Pinterest indexing -->
+    <meta name="p:domain_verify" content="3ff193be13e7fbcb9cdf824778f234c3"/>
+
+    <!-- Preconnect optimization -->
+    <link rel="preconnect" href="https://js.hs-scripts.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <!-- Preload optimization -->
+   <link rel="preload" href="https://moabi.com/fonts/1Ptrg8zYS_SKggPNwIouWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="https://moabi.com/fonts/1Ptrg8zYS_SKggPNwN4rWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="https://moabi.com/fonts/1Ptug8zYS_SKggPNyC0ISg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="https://moabi.com/fonts/1Ptrg8zYS_SKggPNwJYtWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="https://moabi.com/js/modernizr.js" as="script">
+   <link rel="preload" href="https://moabi.com/js/jquery-3.4.1.min.js" as="script">
+   <link rel="preload" href="https://moabi.com/js/lazyload.js" as="script">
+   <link rel="preload" href="https://moabi.com/js/main.js" as="script">
+   <link rel="preload" href="https://moabi.com/js/rev.js" as="script">
+   <link rel="preload" href="https://moabi.com/js/custom.jp.js" as="script">
+   <link rel="preload" href="https://moabi.com/js/site.js" as="script">
+
+    <link rel="preload" href="https://moabi.com/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Canonical name -->
+    <link rel="canonical" href="https://moabi.com/jp/" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://moabi.com/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="https://moabi.com/favicon-16x16.png" sizes="16x16" />  
+    <link rel="icon" type="image/png" href="https://moabi.com/favicon-32x32.png" sizes="32x32" />  
+    <link rel="icon" type="image/png" href="https://moabi.com/favicon-96x96.png" sizes="96x96" />  
+
+    <!-- Apple icons -->
+    <link rel="apple-touch-icon" sizes="120x120" href="https://moabi.com/apple-120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="https://moabi.com/apple-152.png" />  
+    <link rel="apple-touch-icon" sizes="167x167" href="https://moabi.com/apple-167.png" />  
+    <link rel="apple-touch-icon" sizes="180x180" href="https://moabi.com/apple-180.png" />  
+
+    <!-- Apple Safari -->
+    <link rel="manifest" href="https://moabi.com/site.webmanifest" />
+    <link rel="mask-icon" href="https://moabi.com/safari-pinned-tab.svg" color="#446CDE" />
+
+    <!-- Microsoft Windows/IE11 Start Screen Tile-->
+    <meta name="application-name" content="moabi.com"/>
+    <meta name="msapplication-square70x70logo" content="https://moabi.com/small.jpg"/>
+    <meta name="msapplication-square150x150logo" content="https://moabi.com/medium.jpg"/>
+    <meta name="msapplication-wide310x150logo" content="https://moabi.com/wide.jpg"/>
+    <meta name="msapplication-square310x310logo" content="https://moabi.com/large.jpg"/>
+    <meta name="msapplication-TileColor" content="#446CDE">
+    <meta name="theme-color" content="#446CDE">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129423028-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129423028-1');
+    </script>
+
+    <!-- Note: stylesheets are loaded twice to make up for the lack of preloading in Firefox. See https://stackoverflow.com/questions/45321043/preload-css-file-not-supported-on-firefox-and-safari-mac -->
+    <!-- CSS  Fonts -->
+    <link rel="preload" href="https://moabi.com/css/font-awesome.min.css" as="style" />
+    <link rel="stylesheet" href="https://moabi.com/css/font-awesome.min.css">
+
+    <!-- CSS  -->
+    <link rel="preload" href="https://moabi.com/css/site.css" as="style" />
+    <link rel="stylesheet" href="https://moabi.com/css/site.css">
+
+</head>
+<body class="skew">
+
+    <!-- Noscript tag -->
+    <noscript>ご使用のブラウザはJavaScriptをサポートしていません。このページの一部の要素が期待どおりに表示されない可能性があります。<br /><br /></noscript>
+
+    <!-- Page Wrapper Starts -->
+    <div class="wrapper">
+        <!-- Header Starts -->
+        <header id="header" class="header">
+            <div class="header-inner">
+                <!-- Navbar Starts -->
+                <nav class="navbar navbar-expand-lg p-0" id="singlepage-nav">
+					<!-- Logo Starts -->
+                    <div class="logo">
+                        <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand link-menu scroll-to-target" alt="main slider" href="#mainslider">
+                            <!-- Logo White Starts -->
+                            <img id="logo-light" class="logo-light" src="https://moabi.com/IoT/security/metrics/logo-white.png" alt="Moabi IoT Firmware Security" title="Moabi white logo" decoding="async" />
+                            <!-- Logo White Ends -->
+                            <!-- Logo Black Starts -->
+                            <img id="logo-dark" class="logo-dark" src="https://moabi.com/IoT/security/metrics/logo-white.png" alt="Analytics" title="Moabi logo" decoding="async" />
+                            <!-- Logo Black Ends -->
+                        </a>
+                    </div>
+					<!-- Logo Ends -->
+					<!-- Hamburger Icon Starts -->
+                    <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span id="icon-toggler">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						</span>
+					</button>
+					<!-- Hamburger Icon Ends -->
+					<!-- Navigation Menu Starts -->
+                    <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
+                            <select name="forma" onchange="location = this.value;" style="background-color:transparent;color:#446CDE;font-weight:bold">
+                             <option value="https://moabi.com/fr/">Français</option>
+                             <option value="https://moabi.com/">English</option>
+                             <option value="https://moabi.com/de/">Deutsch</option>
+                             <option value="https://moabi.com/es/">Español</option>
+                             <option value="https://moabi.com/pt/">Portugues</option>
+                             <option value="https://moabi.com/cn/">中国人</option>
+                            </select>
+                        <ul class="nav-menu-inner ml-auto">
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="home" href="#mainslider"><i class="fa fa-home"></i> メインメニュー</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="platform" href="#platform"><i class="fa fa-cloud"></i> プラットフォーム</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="mission" href="#mission"><i class="fa fa-handshake-o"></i> 使命</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="analytics" href="#analytics"><i class="fa fa-bar-chart"></i> 指標</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="reports" href="#report"><i class="fa fa-file-pdf-o"></i> 報告書</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="case studies" href="#casestudy"><i class="fa fa-user-o"></i> ケーススタディ</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="demo" href="#demo"><i class="fa fa-play"></i> <span style="color:red"> デモ</span></a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="research" href="https://moabi.com/research/jbrossard/" onclick="window.location=$(this).attr('href')"><i class="fa fa-cogs"></i> 研究する</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="blog" href="https://blog.moabi.com/" onclick="window.location=$(this).attr('href')"><i class="fa fa-wordpress"></i> ブログ</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="members login" href="https://www.moabi.info/" onclick="window.location=$(this).attr('href')"><i class="fa fa-user-circle-o"></i> 会員エリア</a></li>
+                        </ul>
+                    </div>
+					<!-- Navigation Menu Ends -->
+                </nav>
+                <!-- Navbar Ends -->
+            </div>
+        </header>
+		<!-- Header Ends -->
+        <!-- Main Slider Section Starts -->
+        <section class="mainslider" id="mainslider">
+            <!-- Slider Hero Starts -->
+            <div class="rev_slider_wrapper fullwidthbanner-container dark-slider" data-alias="vimeo-hero" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+                <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
+                <div id="rev_slider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-18" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="/IoT/security/metrics/moabi_paris-thumbnail.jpg" data-rotate="0" data-saveperformance="off" data-title="Ken Burns" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="https://moabi.com/IoT/security/metrics/blank.jpg" data-lazyload="/IoT/security/metrics/moabi_paris-1600.jpg" alt="Security Analytics" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="180" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina title="Moabi office background" decoding="async">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">ミッション
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">安全なソフトウェア
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i>
+                            </div>
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','97','90','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#platform" alt="platform" class="custom-button slider-button scroll-to-target">プラットフォーム</a></div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-3" data-transition="zoomin" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="/IoT/security/metrics/moabi_NYC-thumbnail.jpg" data-rotate="0" data-fsmasterspeed="300" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="https://moabi.com/IoT/security/metrics/blank.jpg" data-lazyload="/IoT/security/metrics/moabi_NYC-1600.jpg" alt="Validation" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="180" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina title="Moabi NYC background" decoding="async">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">オンラインプラットフォーム
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">自動セキュリティレポート
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i>
+                            </div>
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','97','90','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#analytics" alt="analytics" class="custom-button slider-button scroll-to-target">指標</a></div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-2" data-transition="zoomin" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="/IoT/security/metrics/moabi_singapore-thumbnail.jpg" data-rotate="0" data-fsmasterspeed="300" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="https://moabi.com/IoT/security/metrics/blank.jpg" data-lazyload="/IoT/security/metrics/moabi_singapore-1600.jpg" alt="Cloud Based Software Verification" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="180" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina title="Moabi Singapore background" decoding="async">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">防御面
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">セキュリティポジショニングのオブジェクト化
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i>
+                            </div>
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','97','90','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#mission" alt="mission" class="custom-button slider-button scroll-to-target">使命</a></div>
+                        </li>
+                    </ul>
+                    <div class="tp-static-layers"></div>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
+            </div>
+            <!-- END REVOLUTION SLIDER -->
+            <!-- Slider Hero Ends -->
+        </section>
+        <!-- Main Slider Section Ends -->
+
+
+
+
+        <!-- Logos Section Starts -->
+        <section class="logos">
+            <div class="container">
+                <ul class="bxslider" id="bxslider">
+                    <!-- Logos Items Starts -->
+
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="Assises" src="https://moabi.com/logos-slider/assises.png" alt="Assises de la Sécurité"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="BPI" src="https://moabi.com/logos-slider/BPI.png" alt="BPI"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="IIC" src="https://moabi.com/logos-slider/IIC.png" alt="Industrial Internet Consortium"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="Generate" src="https://moabi.com/logos-slider/generate.png" alt="Generate"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="DisruptSF" src="https://moabi.com/logos-slider/DisruptSF.png" alt="Disrupt SF"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="IoXT" src="https://moabi.com/logos-slider/ioxt.png" alt="IoXT"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="IDF" src="https://moabi.com/logos-slider/idf.png" alt="Ile de France"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="IoTSF" src="https://moabi.com/logos-slider/IoTSF.png" alt="IoTSF"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="InnovUP" src="https://moabi.com/logos-slider/logoinnovup.jpg" alt="InnovUp"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 150px;"><img id="Avenir" src="https://moabi.com/logos-slider/avenir.png" alt="Avenir"></li>
+                    <!-- Logos Items Ends -->
+                </ul>
+            </div>
+            <br /><br />
+        </section>
+        <!-- Logos Section Ends -->
+
+
+
+
+
+        <!-- About Section Starts -->
+        <section id="platform" class="about">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>プラットフォーム</span></h1>
+                    <h4>継続的な安全改善プロセス</h4>
+                </div>
+                <!-- Main Heading Ends -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cloud" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- About Content Starts -->
+                <div class="row about-content">
+                    <div class="col-sm-12 col-md-12 col-lg-6 about-left-side">
+                        <h3 class="title-about">指標と <span style="color:#446CDE;font-weight:bolder">報告書</span>  <span style="color:#446CDE;font-weight:bolder"> 安全保障</span></h3>
+                        <hr>
+
+			<p>ソフトウェアはどこにでもあります：クラウド、IoT、産業用ソフトウェアから、自動車や組み込みソフトウェア、ホームオートメーション、5Gなど... <br> <br />使用するソフトウェアは安全ですか？ ビジネスのセキュリティを向上させるためにサプライチェーンを継続的に監視していますか？<br> <br /> Moabiは、開発プロセスの測定と継続的な改善を支援し、最大限に活用します。 デジタル変革<br> <br /> Moabiは、あらゆるタイプのソフトウェアの分析、品質、理解を向上させます。 社内で開発されたか、外部委託されたか、独立したソフトウェアベンダーによって開発されたか、オープンソースから開発されたか。
+</p>
+
+						<!-- Tabs Heading Starts -->
+                        <ul class="nav nav-tabs">
+                            <li><a class="active" data-toggle="tab" alt="services" href="#menu1">サービス</a></li>
+                            <li><a data-toggle="tab" alt="performance" href="#menu2" >パフォーマンス</a></li>
+                            <li><a data-toggle="tab" alt="benefits" href="#menu3" >利益</a></li>
+                        </ul>
+                        <!-- Tabs Heading Ends -->
+                        <!-- Tabs Content Starts -->
+                        <div class="tab-content">
+                            <div id="menu1" class="tab-pane fade in active">
+                                <p>5つの指標に従ってソフトウェアを測定します。<br /> 
+				<b>技術的負債、暗号化、コンプライアンス、多層防御、脆弱性。</b><br /><br />
+					自動レポートを取得：<br />
+					<b>分析レポート、コンプライアンスレポート</b>
+					</p>
+				</div>
+				<div id = "menu2" class = "tab-pane fade">
+				<p>
+					<li> <strong>簡単</strong> 1日に数千ものプログラムを分析します。</li>
+					<li> <strong>シンプル</strong>オペレーティングシステム全体、クラウドイメージ、または完全なIoTファームウェアを分析します。</li>
+					<li> <strong>スケーラブル</strong>クラウドモードで人工知能を利用します。</li>
+					<li> <strong> Uniform </strong>は、IoT、モバイルアプリケーション、または産業用ソフトウェアやエンタープライズソフトウェアに同じリポジトリを使用します。</li>
+					<li> <strong>ソースコードは不要</strong>サードパーティのアプリケーションとライブラリを分析します。</li>
+				</p>
+                                </div>
+                                <div id = "menu3" class = "tab-pane fade">
+                                <p>
+					<li> <strong>コスト管理</strong>シンプルで予測可能なサブスクリプション</li>
+					<li> <strong>オンデマンドサービス</strong>は、使用したサービスに対してのみ支払います。</li>
+					<li> <strong>コンプライアンス</strong>は、新しい基準と標準の統合により継続的にメリットを得ます。</li>
+					<li> <strong>サードパーティソフトウェア</strong>は、サプライヤーとサードパーティソフトウェアの指標を取得します。</li>
+					<li> <strong>コスト管理</strong>ソフトウェアのメンテナンスコストを予測します。</li>
+				</p>
+                            </div>
+                        </div>
+                        <!-- Tabs Content Ends -->
+                        <a class="custom-button scroll-to-target" alt="analytics" href="#analytics">指標</a>
+                    </div>
+                    <div class="col-md-12 col-lg-6 about-right">
+						<div class="about-right-side">
+							<img class="img-fluid" src="https://moabi.com/IoT/security/metrics/mission.jpg" alt="指標" height="385" width="576" title="Moabi 指標" decoding="async">
+						</div>
+                    </div>
+                </div>
+                <!-- About Content Ends -->
+            </div>
+            <!-- Container Ends -->
+        </section>
+        <!-- About Section Ends -->
+        <!-- Video Section Starts -->
+        <section id="mission" class="videopromotion lazyload" src="https://moabi.com/IoT/security/metrics/blank.jpg" data-src="https://moabi.com/IoT/security/metrics/moabi_paris-1600.jpg" decoding="async" style="width: 80%;margin-left: 10%;" >
+            <div class="section-overlay">
+                <!-- Container Starts -->
+                <div class="container">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h1>Moabi : 指標</h1>
+                        <h4>安全なソフトウェア</h4>
+                    </div>
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-handshake-o" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                    <!-- Main Heading Ends -->
+                    <div class="video-content">
+			<p />
+                        <p class="text-center"><span style="color:white">防御メトリクスと表面：5つの主要なメトリクスを使用して開発サイクル（SSDLC）の各段階でセキュリティの位置付けを評価し、コンプライアンスレポートを取得します</span></p>
+			<p />
+                        <!-- Video Play Starts -->
+                        <div class="magnific-popup-gallery">
+                            <div class="btn-wrapper text-center"><a class="image-wrap mfp-youtube" alt="Moabiプレゼンテーションビデオ" aria-label="Moabiプレゼンテーションビデオ"  href="https://www.youtube.com/watch?v=40dEEyxAgo0" crossorigin="anonymous"></a></div>
+                        </div>
+                        <!-- Video Play Ends -->
+                    </div>
+                </div>
+                <!-- Container Ends -->
+            </div>
+        </section>
+        <!-- Video Section Ends -->
+        <!-- Services Section Starts -->
+        <section id="analytics" class="services">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>指標</span></h1>
+                    <h4>5つの主要なセキュリティ指標</h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-bar-chart" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- Services Starts -->
+                <div class="row services-box">
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-microchip" data-headline="技術的負債"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-microchip">
+                            <h2>技術的負債</h2>
+                            <p>アーキテクチャとコンパイルチェーンの技術的負債の評価。</p>
+                            <a href="https://blog.moabi.com/2019/05/08/legacy/">もっと詳しく</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-lock" data-headline="暗号化"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-lock">
+                            <h2>暗号化</h2>
+                            <p>暗号化アルゴリズムの回復力を識別して定量化し、アプリケーションで使用されている暗号化アルゴリズムを自動的に検出します。</p>
+                            <a href="https://blog.moabi.com/2019/05/08/cryptography/">もっと詳しく</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-balance-scale" data-headline="コンプライアンス"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-balance-scale">
+                            <h2>コンプライアンス</h2>
+                            <p>ソフトウェアが業界標準とベストプラクティスに準拠しているか確認します。 将来の互換性の問題を予測します。</p>
+                            <a href="https://blog.moabi.com/2019/05/08/compliance/">もっと詳しく</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-cogs" data-headline="多層防御"></span>
+                        <!-- Service Item Cover Ends -->
+                        <div class="services-box-item-content fa fa-cogs">
+                            <h2>多層防御</h2>
+                            <p>ソフトウェアに一般的な攻撃ベクトルに対する防御メカニズムがあることを確認します。</p>
+                            <a href="https://blog.moabi.com/2019/05/08/hardening/">もっと詳しく</a>
+                        </div>
+                    </div>
+                    <!-- Service Item Ends -->
+
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-warning" data-headline="脆弱性"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-warning">
+                            <h2>脆弱性</h2>
+                            <p>Moabiのシンボリック実行エンジンを使用して、既知の脆弱性（CVE）を不明として検出します。</p>
+                            <a href="https://blog.moabi.com/2019/05/08/vulnerabilities/">もっと詳しく</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+                </div>
+                <!-- Services Ends -->
+            </div>
+        </section>
+        <!-- Services Section Ends -->
+        <!-- Reports Starts -->
+        <section id="report" class="services lazyload" src="https://moabi.com/IoT/security/metrics/blank.jpg" data-src="https://moabi.com/IoT/security/metrics/moabi_NYC-1600.jpg" decoding="async" style="width: 80%;margin-left: 10%;">
+            <!-- Container Starts -->
+            <div class="section-overlay" id="report-beauty">
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span style="color:white">報告書 MOABI</span></h1>
+                    <h4><span style="color:white">3種類のレポート</span></h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-file-pdf-o" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- Services Starts -->
+                <div class="row services-box">
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-bar-chart-o" data-headline="レベル分析レポート 1"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-bar-chart-o">
+                            <h2>レベル分析レポート 1</h2>
+                            <p>この最初のレベルの分析は、意思決定者向けのソフトウェアの静的分析中に計算されたすべてのメトリックのエグゼクティブサマリーを提供します。</p>
+                            <a href="https://blog.moabi.com/2019/05/08/analytics-report-level-1-a1/">もっと詳しく</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-pie-chart" data-headline="レベル分析レポート 2"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-pie-chart">
+                            <h2>レベル分析レポート 2</h2>
+                            <p>この2番目のレベルの分析は、静的ソフトウェア分析中に検出されたすべての弱点と脆弱性をカバーする詳細なテクニカルレポートを提供します。</p>
+                            <a href="https://blog.moabi.com/2019/05/08/analytics-report-level-2-a2/">もっと詳しく</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+
+                    <!-- Service Item Starts -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
+                        <!-- Service Item Cover Starts -->
+                        <span class="services-box-item-cover fa fa-ambulance" data-headline="コンプライアンスレポート"></span>
+                        <!-- Service Item Cover Ends -->
+                        <!-- Service Item Content Starts -->
+                        <div class="services-box-item-content fa fa-ambulance">
+                            <h2>コンプライアンスレポート</h2>
+                            <p>識別された脆弱性と弱点に対処するためのコンプライアンスレポート、および将来のソフトウェアクラッシュを見越してソフトウェアをより安全で堅牢にするための推奨事項を取得します。</p>
+                            <a href="https://blog.moabi.com/2019/05/08/remediation-reports/">もっと詳しく</a>
+                        </div>
+                        <!-- Service Item Content Ends -->
+                    </div>
+                    <!-- Service Item Ends -->
+                </div>
+                <!-- Services Ends -->
+            </div>
+            </div>
+        </section>
+        <!-- Reports Section Ends -->
+        <!-- Portfolio Section Starts -->
+        <section id="casestudy" class="portfolio">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>ケーススタディ</span></h1>
+                    <h4>実際のMoabiメトリック</h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-user-o" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- Filter Wrapper Starts -->
+                <nav>
+                    <ul class="simplefilter nav nav-pills d-block">
+                        <!-- Filter Wrapper Items Starts -->
+                        <li class="active" data-filter="all"><i class="fa fa-reorder"></i> すべてのトピック</li>
+                        <li data-filter="1">指標</li>
+                        <li data-filter="4">ケーススタディ</li>
+                        <li data-filter="2">ビデオ</li>
+                        <li data-filter="5">研究</li>
+                        <li data-filter="3">例</li>
+                        <!-- Filter Wrapper Items Ends -->
+                    </ul>
+                </nav>
+                <!-- Filter Wrapper Ends -->
+                <div>
+                    <div class="filtr-container">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/hardening/" title="多層防御：ソフトウェアに一般的な攻撃経路に対する防御メカニズムが含まれていることを確認します。" alt="多層防御"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/hardening.jpg" alt="多層防御" height="385" width="576" title="多層防御" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>多層防御</h3>
+                                    <p>ソフトウェアに一般的な攻撃ベクトルに対する防御メカニズムがあることを確認します。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/vulnerabilities/" title="脆弱性：Moabiのシンボリック実行エンジンを使用して、既知の脆弱性（CVE）を不明として検出します。" alt="Moabi métrique de vulnérabilité"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/assessment.jpg" alt="脆弱性" height="385" width="576" title="Moabi 脆弱性" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>脆弱性</h3>
+                                    <p>既知の脆弱性を不明として検出します。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="4">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/automotive/" title="ソースコードが利用できない場合でも、車に埋め込まれたサードパーティソフトウェアを分析します。" alt="自動車"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/automotive.jpg" alt="自動車" height="385" width="576" title="Moabi : 自動車" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>自動車</h3>
+                                    <p>サードパーティのソフトウェアを分析します。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/legacy/" title="技術的負債：アーキテクチャおよびコンパイルチェーンの技術的負債の評価。" alt="Moabi : 技術的負債の測定"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/legacy.jpg" alt="技術的負債の測定" height="385" width="576" title="技術的負債の測定" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>技術的負債の測定</h3>
+                                    <p>アプリケーションの技術的負債を測定します。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="4">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/edge-computing/" title="Moabiメトリックを使用したEdge Computingセキュリティポリシーの実装。" alt="Edge computing"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/edge.jpg" alt="Edge Computing" height="385" width="576" title="Moabi : Edge computing" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>エッジコンピューティング</h3>
+                                    <p>第4次産業革命を活用してください。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="2">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap mfp-youtube" aria-label="Moabiプレゼンテーションビデオ"  href="https://www.youtube.com/watch?v=40dEEyxAgo0" crossorigin="anonymous" alt="Moabiプレゼンテーションビデオ"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/trailer1.jpg" alt="Moabiプレゼンテーションビデオ" height="385" width="576" title="Moabiプレゼンテーションビデオ" decoding="async" /><span class="zoom-icon video-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Moabiプレゼンテーションビデオ</h3>
+                                    <p>実際のMoabiの5つの主要な指標をご覧ください。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/cryptography/" title="暗号化：暗号化アルゴリズムの回復力を特定して定量化する" alt="Moabi : 暗号メトリック"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/cryptographicciphers.jpg" alt="暗号化" height="385" width="576" title="Moabi : 暗号メトリック" decoding="async" /><span class="zoom-icon gallery-icon"></span></a>
+                                </figure>
+
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>暗号化</h3>
+                                    <p>暗号化アルゴリズムの堅牢性を評価します。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="4">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/iiot/" title="Moabiのおかげで、安全な方法でIIoTの可能性を最大限に活用できます。" alt="Moabi、IIoTのケーススタディ"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/iiot.jpg" alt="IIoT" height="385" width="576" title="Moabi、IIoTのケーススタディ" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>IIoTケーススタディ</h3>
+                                    <p>第4次産業革命を確保する。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="3">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://github.com/moabi-com/test_samples" title="例：テストプログラムをダウンロードします。" alt="例：テストプログラムをダウンロードします。"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/samples.jpg" alt="例：テストプログラムをダウンロードします。" height="385" width="576" title="例：テストプログラムをダウンロードします。" decoding="async" /><span class="zoom-icon external-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>例</h3>
+                                    <p>テストプログラムをダウンロードしてください。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/compliance/" title="業界標準への準拠" alt="業界標準への準拠"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/compliance.jpg" alt="業界標準への準拠" height="385" width="576" title="業界標準への準拠" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>業界標準への準拠</h3>
+                                    <p>工業規格への準拠を確認します。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="2">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap mfp-youtube" aria-label="RSA 2020でのMoabiプレゼンテーション"  href="https://www.youtube.com/watch?v=xgUiZxFxdF4" crossorigin="anonymous" alt="RSA 2020でのMoabiプレゼンテーション"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/trailer2.jpg" alt="RSA 2020でのMoabiプレゼンテーション" height="385" width="576" title="RSA 2020でのMoabiプレゼンテーション" decoding="async" /><span class="zoom-icon video-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>RSA 2020でのMoabiプレゼンテーション</h3>
+                                    <p>RSAC 2020でのプレゼンテーションをご覧ください。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="5">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://moabi.com/research/jbrossard/" title="最後の検索" alt="最後の検索"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/research.jpg" alt="Dernière recherches" height="385" width="576" title="最後の検索" decoding="async" /><span class="zoom-icon external-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>最後の検索</h3>
+                                    <p>Moabiの最新の出版物をご覧ください。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="4">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://blog.moabi.com/2019/05/08/5g/" title="5Gに備えましょう！ 安全です。" alt="5Gに備えましょう！ 安全です。"><img class="img-fluid" src="https://moabi.com/IoT/security/metrics/5g.jpg" alt="5G" height="385" width="576" title="5Gに備えましょう！ 安全です。" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>5G</h3>
+                                    <p>5Gに備えましょう！ 安全です。</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<br /><br /><br /><br />
+            </div>
+            <!-- Container Ends -->
+        </section>
+        <!-- Portfolio Section Ends -->
+
+        <!-- Contact Form Section Starts -->
+        <section id="demo" class="contactform lazyload" data-src="https://moabi.com/IoT/security/metrics/moabi_paris-1600.jpg" decoding="async" style="width: 80%;margin-left: 10%;">
+            <div class="section-overlay">
+                <div class="container">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h2><span style="font-size:48px">テストをリクエストする</span></h2>
+                        <h4>デモの準備はいいですか？ このフォームを使用してテストをリクエストする</h4>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <div class="form-container">
+                        <!-- Contact Form Starts -->
+                        <form action="https://share.hsforms.com/1ej9mbT9kTEa_IWEdjKRpcg3b1qs">
+                            <div class="row form-inputs">
+                                <!-- First Name Field Starts -->
+                                <div class="col-md-6 form-group custom-form-group">
+                                    <span class="input custom-input">
+										<input placeholder="名" class="input-field custom-input-field" id="firstname" name="firstname" autocomplete='given-name' type="text" data-error="NEW ERROR MESSAGE" aria-label="firstname"  required >
+										<label class="input-label custom-input-label" >
+											<i class="fa fa-user icon icon-field"></i>
+										</label>
+									</span>
+                                </div>
+                                <!-- First Name Field Ends -->
+                                <!-- Last Name Field Starts -->
+                                <div class="col-md-6 form-group custom-form-group">
+                                    <span class="input custom-input">
+										<input placeholder="姓" class="input-field custom-input-field" id="lastname" name="lastname" autocomplete='family-name' type="text" aria-label="lastname"  required >
+										<label class="input-label custom-input-label" >
+											<i class="fa fa-user icon icon-field"></i>
+										</label>
+									</span>
+                                </div>
+                                <!-- Last Name Field Ends -->
+                                <!-- Job Title Field Starts -->
+                                <div class="col-md-6 form-group custom-form-group">
+                                    <span class="input custom-input">
+                                    <input placeholder="投稿タイトル" class="input-field custom-input-field" id="message" name="jobtitle" autocomplete='job-title' type="text" aria-label="job-title"  required >
+										<label class="input-label custom-input-label" >
+											<i class="fa fa-user-o icon icon-field"></i>
+										</label>
+									</span>
+                                </div>
+                                <!-- Job Title Field Ends -->
+                                <!-- Company Field Starts -->
+                                <div class="col-md-6 form-group custom-form-group">
+                                    <span class="input custom-input">
+                                    <input placeholder="会社" class="input-field custom-input-field" id="company" name="company" autocomplete='company' type="text" aria-label="company"  required >
+										<label class="input-label custom-input-label" >
+											<i class="fa fa-user-o icon icon-field"></i>
+										</label>
+									</span>
+                                </div>
+                                <!-- Company Field Ends -->
+
+                                <!-- Email Name Field Starts -->
+                                <div class="col-md-6 form-group custom-form-group">
+                                    <span class="input custom-input">
+										<input placeholder="電子メール" class="input-field custom-input-field" id="email" name="email" autocomplete='email' type="text" aria-label="email"  required >
+										<label class="input-label custom-input-label" >
+											<i class="fa fa-envelope icon icon-field"></i>
+										</label>
+									</span>
+                                </div>
+                                <!-- Email Name Field Ends -->
+                                <!-- Submit Button Starts -->
+                                <div class="col-md-6 submit-form">
+                                    <button id="form-submit" name="submit" type="submit" class="custom-button" aria-label="request demo" title="Send">デモをリクエストする</button>
+                                </div>
+                                <!-- Submit Button Ends -->
+                                <!-- Form Submit Message Starts -->
+                                <div class="col-sm-12 text-center output_message_holder d-none">
+                                    <p class="output_message"></p>
+                                </div>
+                                <!-- Form Submit Message Ends -->
+                            </div>
+                        </form>
+                        <!-- Contact Form Ends -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form Section Ends -->
+
+        <!-- Footer Section Starts -->
+        <footer class="footer text-center">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Copyright Text Starts -->
+                <p><a href="https://moabi.com" alt="Moabi main page">MOABI - 安全なソフトウェア</a></p>
+                <br />
+                    &copy; 著作権 2010-2020 <a href="https://moabi.com" alt="Moabi.com">MOABI.com</a>
+                </p>
+                <!-- Copyright Text Ends -->
+                <!-- Social Media Links Starts -->
+                <div class="social-icons">
+                    <ul class="social">
+                        <li>
+                            <a class="linkedin"  href="https://www.linkedin.com/company/moabi-com" title="linkedin" alt="Moabi Linkedin page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="twitter"  href="https://twitter.com/moabi_com" title="twitter" alt="Moabi Twitter page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="facebook"  href="https://www.facebook.com/moabi.info" title="facebook" alt="Moabi Facebook page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="youtube"  href="https://www.youtube.com/moabi" title="youtube" alt="Moabi Youtube page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="github"  href="https://github.com/moabi-com/test_samples/" title="github" alt="Moabi Github page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="slideshare"  href="http://slideshare.net/endrazine/" title="slideshare" alt="Moabi Slideshare" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="wordpress"  href="https://blog.moabi.com" title="wordpress" alt="Moabi blog" crossorigin="anonymous" ></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media Links Ends -->
+
+	    <!-- Legal disclaimers -->
+
+		<a  href="https://sway.office.com/s/ZGZJ9H4Acjpmeiv1/embed" crossorigin="anonymous" alt="Moabi Statement of privacy" >プライバシーおよびデータ保護規制</a><p />
+		<a  href="https://sway.office.com/s/77E2E35BSeGykIj0/embed" crossorigin="anonymous" alt="Moabi terms of use" >モアビサイトの利用規約</a>
+
+	    <!-- End of Legal disclaimers -->
+
+            </div>
+            <!-- Container Ends -->
+        </footer>
+        <!-- Footer Section Starts -->
+        <!-- Back To Top Starts -->
+        <div id="back-top-wrapper" class="d-none d-sm-block">
+            <p id="back-top">
+                <a href="index.html#top" alt="back to top"><span> </span></a>
+            </p>
+        </div>
+        <!-- Back To Top Ends -->
+    </div>
+    <!-- Wrapper Ends -->
+
+    <!-- Template JS Files -->
+    <script type="text/javascript" src="https://moabi.com/js/modernizr.js"></script>
+    <script type="text/javascript" src="https://moabi.com/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://moabi.com/js/main.js"></script>
+    <script type="text/javascript" src="https://moabi.com/js/lazyload.js"></script>
+    <!-- Revolution Slider Main JS Files -->
+    <script defer type="text/javascript" src="https://moabi.com/js/rev.js"></script>
+    <!-- Revolution Slider Extensions -->
+    <script defer type="text/javascript" src="https://moabi.com/js/site.js"></script>
+    <!-- Main JS Initialization File -->
+    <script defer type="text/javascript" src="https://moabi.com/js/custom.jp.js"></script>
+
+    <!-- Add javascript listener -->
+    <script type="text/javascript">
+	jQuery.event.special.touchstart = {
+	  setup: function( _, ns, handle ){
+	   if ( ns.includes("noPreventDefault") ) {
+	     this.addEventListener("touchstart", handle, { passive: false });
+	   } else {
+	     this.addEventListener("touchstart", handle, { passive: true });
+	  }
+	 }
+	};
+	jQuery.event.special.touchmove = {
+	   setup: function( _, ns, handle ){
+	      if ( ns.includes("noPreventDefault") ) {
+		 this.addEventListener("touchmove ", handle, { passive: false });
+	      } else {
+		 this.addEventListener("touchmove ", handle, { passive: true });
+	      }
+	   }
+	};
+    </script>
+
+    <!-- Lazy loading of images handler -->
+    <script type="text/javascript">
+	window.addEventListener("load", function(event) {
+	    lazyload();
+	});
+    </script>
+
+    <!-- Add Service Worker -->
+    <script type="text/javascript">
+	if ('serviceWorker' in navigator) {
+	  // Register a service worker hosted at the root of the
+	  // site using the default scope.
+	  navigator.serviceWorker.register('https://moabi.com/service-worker.js').then(function(registration) {
+	    console.log('Service worker registration succeeded:', registration);
+	  }, /*catch*/ function(error) {
+	    console.log('Service worker registration failed:', error);
+	  });
+	} else {
+	  console.log('Service workers are not supported.');
+	}
+    </script>
+
+    <!-- Revolution Slider Initialization Starts -->
+    <script type="text/javascript">
+!function(){"use strict";var e=jQuery;e(document).ready(function(){null==e("#rev_slider").revolution?revslider_showDoubleJqueryError("#rev_slider"):e("#rev_slider").show().revolution({sliderType:"standard",jsFileLocation:"js/plugins/revolution/js/",dottedOverlay:"none",sliderLayout:"fullscreen",delay:9e3,navigation:{keyboardNavigation:"off",keyboard_direction:"horizontal",mouseScrollNavigation:"off",onHoverStop:"off",touch:{touchenabled:"on",swipe_threshold:75,swipe_min_touches:1,swipe_direction:"horizontal",drag_block_vertical:!1},arrows:{style:"zeus",enable:!0,hide_onmobile:!0,hide_under:600,hide_onleave:!0,hide_delay:200,hide_delay_mobile:1200,tmp:'<div class="tp-title-wrap">  \t<div class="tp-arr-imgholder"></div> </div>',left:{h_align:"left",v_align:"center",h_offset:90,v_offset:0},right:{h_align:"right",v_align:"center",h_offset:90,v_offset:0}},bullets:{enable:!1,hide_onmobile:!0,hide_under:600,style:"metis",hide_onleave:!0,hide_delay:200,hide_delay_mobile:1200,direction:"horizontal",h_align:"center",v_align:"bottom",h_offset:0,v_offset:30,space:5,tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span>'}},viewPort:{enable:!0,outof:"pause",visible_area:"80%"},responsiveLevels:[1240,1024,778,480],gridwidth:[1240,1024,778,480],gridheight:[600,600,500,400],lazyType:"none",parallax:{type:"mouse",origo:"slidercenter",speed:2e3,levels:[2,3,4,5,6,7,12,16,10,50]},shadow:0,spinner:"off",stopLoop:"off",stopAfterLoops:-1,stopAtSlide:-1,shuffle:"off",hideThumbsOnMobile:"off",autoHeight:"off",hideSliderAtLimit:0,hideCaptionAtLimit:0,hideAllCaptionAtLilmit:0,debugMode:!1,fallbacks:{simplifyAll:"off",nextSlideOnWindowFocus:"off",disableFocusListener:!1}})})}(jQuery);
+    </script>
+    <!-- Revolution Slider Initialization Ends -->
+
+    <!-- HubSpot Embed Code -->
+    <script async defer type="text/javascript" id="hs-script-loader" src="https://js.hs-scripts.com/5554324.js"></script>
+
+</body>
+</html>
