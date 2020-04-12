@@ -87,12 +87,91 @@
   <xhtml:link rel="alternate" hreflang="jp" href="https://moabi.com/jp/" />
 </url>
 <url>
-  <loc>https://cve.moabi.com/</loc>
+  <loc>https://moabi.com/index.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2020-04-12</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://moabi.com/index.html" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://moabi.com/fr/index.html" />
+  <xhtml:link rel="alternate" hreflang="es" href="https://moabi.com/es/index.html" />
+  <xhtml:link rel="alternate" hreflang="de" href="https://moabi.com/de/index.html" />
+  <xhtml:link rel="alternate" hreflang="cn" href="https://moabi.com/cn/index.html" />
+  <xhtml:link rel="alternate" hreflang="pt" href="https://moabi.com/pt/index.html" />
+  <xhtml:link rel="alternate" hreflang="jp" href="https://moabi.com/jp/index.html" />
 </url>
 <url>
-  <loc>https://moabi.com/index.html</loc>
+  <loc>https://moabi.com/fr/index.html</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2020-04-12</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://moabi.com/index.html" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://moabi.com/fr/index.html" />
+  <xhtml:link rel="alternate" hreflang="es" href="https://moabi.com/es/index.html" />
+  <xhtml:link rel="alternate" hreflang="de" href="https://moabi.com/de/index.html" />
+  <xhtml:link rel="alternate" hreflang="cn" href="https://moabi.com/cn/index.html" />
+  <xhtml:link rel="alternate" hreflang="pt" href="https://moabi.com/pt/index.html" />
+  <xhtml:link rel="alternate" hreflang="jp" href="https://moabi.com/jp/index.html" />
+</url>
+<url>
+  <loc>https://moabi.com/es/index.html</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2020-04-12</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://moabi.com/index.html" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://moabi.com/fr/index.html" />
+  <xhtml:link rel="alternate" hreflang="es" href="https://moabi.com/es/index.html" />
+  <xhtml:link rel="alternate" hreflang="de" href="https://moabi.com/de/index.html" />
+  <xhtml:link rel="alternate" hreflang="cn" href="https://moabi.com/cn/index.html" />
+  <xhtml:link rel="alternate" hreflang="pt" href="https://moabi.com/pt/index.html" />
+  <xhtml:link rel="alternate" hreflang="jp" href="https://moabi.com/jp/index.html" />
+</url>
+<url>
+  <loc>https://moabi.com/de/index.html</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2020-04-12</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://moabi.com/index.html" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://moabi.com/fr/index.html" />
+  <xhtml:link rel="alternate" hreflang="es" href="https://moabi.com/es/index.html" />
+  <xhtml:link rel="alternate" hreflang="de" href="https://moabi.com/de/index.html" />
+  <xhtml:link rel="alternate" hreflang="cn" href="https://moabi.com/cn/index.html" />
+  <xhtml:link rel="alternate" hreflang="pt" href="https://moabi.com/pt/index.html" />
+  <xhtml:link rel="alternate" hreflang="jp" href="https://moabi.com/jp/index.html" />
+</url>
+<url>
+  <loc>https://moabi.com/pt/index.html</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2020-04-12</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://moabi.com/index.html" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://moabi.com/fr/index.html" />
+  <xhtml:link rel="alternate" hreflang="es" href="https://moabi.com/es/index.html" />
+  <xhtml:link rel="alternate" hreflang="de" href="https://moabi.com/de/index.html" />
+  <xhtml:link rel="alternate" hreflang="cn" href="https://moabi.com/cn/index.html" />
+  <xhtml:link rel="alternate" hreflang="pt" href="https://moabi.com/pt/index.html" />
+  <xhtml:link rel="alternate" hreflang="jp" href="https://moabi.com/jp/index.html" />
+</url>
+<url>
+  <loc>https://moabi.com/cn/index.html</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2020-04-12</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://moabi.com/index.html" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://moabi.com/fr/index.html" />
+  <xhtml:link rel="alternate" hreflang="es" href="https://moabi.com/es/index.html" />
+  <xhtml:link rel="alternate" hreflang="de" href="https://moabi.com/de/index.html" />
+  <xhtml:link rel="alternate" hreflang="cn" href="https://moabi.com/cn/index.html" />
+  <xhtml:link rel="alternate" hreflang="pt" href="https://moabi.com/pt/index.html" />
+  <xhtml:link rel="alternate" hreflang="jp" href="https://moabi.com/jp/index.html" />
+</url>
+<url>
+  <loc>https://moabi.com/jp/index.html</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2020-04-12</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://moabi.com/index.html" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://moabi.com/fr/index.html" />
+  <xhtml:link rel="alternate" hreflang="es" href="https://moabi.com/es/index.html" />
+  <xhtml:link rel="alternate" hreflang="de" href="https://moabi.com/de/index.html" />
+  <xhtml:link rel="alternate" hreflang="cn" href="https://moabi.com/cn/index.html" />
+  <xhtml:link rel="alternate" hreflang="pt" href="https://moabi.com/pt/index.html" />
+  <xhtml:link rel="alternate" hreflang="jp" href="https://moabi.com/jp/index.html" />
+</url>
+<url>
+  <loc>https://cve.moabi.com/</loc>
   <changefreq>daily</changefreq>
   <lastmod>2020-04-12</lastmod>
 </url>
