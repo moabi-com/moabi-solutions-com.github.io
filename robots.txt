@@ -1,14 +1,15 @@
 User-agent: *
-Allow: /IoT
-Allow: /blog
-Allow: /news
+Allow: /IoT/
+Allow: /blog/
+Allow: /news/
 Allow: /cn/
 Allow: /de/
 Allow: /es/
 Allow: /fr/
 Allow: /jp/
 Allow: /pt/
-
+Allow: /research/
+Allow: /advisories/
 
 User-agent: Twitterbot
 Allow: /cn/
@@ -17,7 +18,9 @@ Allow: /es/
 Allow: /fr/
 Allow: /jp/
 Allow: /pt/
-Allow: /IoT
+Allow: /IoT/
+Allow: /research/
+Allow: /advisories/
 
 User-agent: facebookexternalhit
 Allow: /cn/
@@ -26,7 +29,9 @@ Allow: /es/
 Allow: /fr/
 Allow: /jp/
 Allow: /pt/
-Allow: /IoT
+Allow: /IoT/
+Allow: /research/
+Allow: /advisories/
 
 #Sitemap
 Sitemap: https://moabi.com/sitemap.xml
